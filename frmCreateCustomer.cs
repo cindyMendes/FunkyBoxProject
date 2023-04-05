@@ -41,7 +41,11 @@ namespace FunkyBox
         int counterDel = 0;
 
        
-
+        /// <summary>
+        /// Fonction ajout de textBox et bouton supprimer
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void picAdd_Click(object sender, EventArgs e)
         {
             if (counterAdd < 6)
@@ -78,7 +82,7 @@ namespace FunkyBox
             MessageBox.Show(txtBoxList[counterAdd].Text);
         }
 
-
+        
 
 
     }//endClass
