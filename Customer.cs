@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -108,6 +109,20 @@ namespace FunkyBox
         }
 
         /// <summary>
+        /// La liste des plaques d'immatriculation
+        /// </summary>
+        private List<string> licencePlate;
+
+        /// <summary>
+        /// Obtient et définit la liste des plaques d'immatriculation
+        /// </summary>
+        public List<string> LicencePlate
+        {
+            get { return licencePlate; }
+            set { licencePlate = value; }
+        }
+
+        /// <summary>
         /// constructeur d'initialisation
         /// </summary>
         /// <param name="FN"></param>
@@ -117,7 +132,7 @@ namespace FunkyBox
         /// <param name="SNa"></param>
         /// <param name="PC"></param>
         /// <param name="Ct"></param>
-        public Customer(string FN, string LN, int SNb, string ST, string SNa, string PC, string Ct)
+        public Customer(string FN, string LN, int SNb, string ST, string SNa, string PC, string Ct, List<string> LP)
         {
             this.FirstName = FN;
             this.LastName = LN;
@@ -126,9 +141,51 @@ namespace FunkyBox
             this.StreetName = SNa;
             this.PostalCode = PC;
             this.City = Ct;
+            this.LicencePlate = LP;
         }
 
+        /// <summary>
+        /// Datatable des clients pour affichages en datagridview 
+        /// et pour exporter/importer en XML
+        /// </summary>
+        private DataTable dtCustomers;
 
+        /// <summary>
+        /// Collection des clients 
+        /// sous forme de dictionnaire trié
+        /// </summary>
+        private SortedDictionary<Int32, Customer> allCustomers;
+
+        /// <summary>
+        /// Générer et retourner une datatable avec les infos des clients
+        /// </summary>
+        /// <returns>une référence de datatable à 7 colonnes</returns>
+        public DataTable ListerStagiaires()
+        {
+
+            // boucle de remplissage de la datatable à partir de la collection
+            this.dtCustomers.Clear();
+            foreach (Customer oneCustomer in this.allCustomers.Values)
+            {
+                // instanciation datarow (=ligne)
+                DataRow dr;   // ligne de la datatable
+                dr = this.dtCustomers.NewRow();
+                // affectation des 3 colonnes
+                dr[0] = oneCustomer.FirstName;
+                dr[1] = oneCustomer.LastName;
+                dr[2] = oneCustomer.StreetNumber;
+                dr[3] = oneCustomer.StreetType;
+                dr[4] = oneCustomer.StreetName;
+                dr[5] = oneCustomer.PostalCode;
+                dr[6] = oneCustomer.City;
+                dr[7] = oneCustomer.LicencePlate;
+
+                // ajouter la ligne à la datatable
+                this.dtCustomers.Rows.Add(dr);
+            }
+            // retourne la référence à la datatable
+            return this.dtCustomers;
+        }
 
 
         //public override string ToString()

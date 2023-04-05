@@ -20,10 +20,16 @@ namespace FunkyBox
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Customer oneCustomer = new Customer("Laurent", "Campan", 44, "Rue", "Hérold", "06000", "Nice");
-            Customer twoCustomer = new Customer("Nicolas", "Raoux", 170, "Rue", "Henri Martin", "06330", "Roquefort-Les-Pins");
-            Customer threeCustomer = new Customer("Cindy", "Mendes", 1, "Chemin", "des Lavandins", "06800", "Cagnes-Sur-Mer");
-            Customer fourCustomer = new Customer("Qaïs", "Hamadou", 29, "Avenue", "Jean Médecin", "06000", "Nice");
+            List<string> oneLP = new List<string>();
+            oneLP.Add("SD-564-FD");
+            oneLP.Add("IU-598-TY");
+            List<string> twoLP = new List<string>();
+            List<string> threeLP = new List<string>();
+            List<string> fourLP = new List<string>();
+            Customer oneCustomer = new Customer("Laurent", "Campan", 44, "Rue", "Hérold", "06000", "Nice", oneLP);
+            Customer twoCustomer = new Customer("Nicolas", "Raoux", 170, "Rue", "Henri Martin", "06330", "Roquefort-Les-Pins", twoLP);
+            Customer threeCustomer = new Customer("Cindy", "Mendes", 1, "Chemin", "des Lavandins", "06800", "Cagnes-Sur-Mer", threeLP);
+            Customer fourCustomer = new Customer("Qaïs", "Hamadou", 29, "Avenue", "Jean Médecin", "06000", "Nice", fourLP);
 
             MessageBox.Show(oneCustomer.ToString() + Environment.NewLine + twoCustomer.ToString());
             //MessageBox.Show(twoCustomer.ToString());
@@ -37,9 +43,7 @@ namespace FunkyBox
         Point myPointPictureBox2 = new Point (836, 115);
         List<TextBox> txtBoxList = new List<TextBox>();
         List<PictureBox> picBoxList = new List<PictureBox>();
-        int counterAdd = 0;
-        int counterDel = 0;
-
+        int counter = 0;
        
         /// <summary>
         /// Fonction ajout de textBox et bouton supprimer
@@ -48,7 +52,7 @@ namespace FunkyBox
         /// <param name="e"></param>
         private void picAdd_Click(object sender, EventArgs e)
         {
-            if (counterAdd < 6)
+            if (counter < 6)
             {
                 myPointTextBox.Y += 40;
                 myPointPictureBox.Y += 40;
@@ -68,8 +72,7 @@ namespace FunkyBox
                 picDel.Click += new System.EventHandler(this.picDel_Click);
                 this.Controls.Add(picDel);
                 picBoxList.Add(picDel);
-                counterAdd++;
-
+                counter++;
             }
             else
             {
@@ -79,11 +82,15 @@ namespace FunkyBox
 
         private void picDel_Click(object sender, System.EventArgs e)
         {
-            MessageBox.Show(txtBoxList[counterAdd].Text);
+            // need to fix this code
+            //MessageBox.Show(e.ToString());
+
+
+        } // end picDel_Click
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
-
-        
-
-
     }//endClass
 }//endNamespace
