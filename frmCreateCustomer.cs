@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,12 +32,54 @@ namespace FunkyBox
 
         }
 
-        private void btnAddVehicle_Click(object sender, EventArgs e)
+        Point myPointTextBox = new Point(683, 115);
+        Point myPointPictureBox = new Point(876, 115);
+        Point myPointPictureBox2 = new Point (836, 115);
+        List<TextBox> txtBoxList = new List<TextBox>();
+        List<PictureBox> picBoxList = new List<PictureBox>();
+        int counterAdd = 0;
+        int counterDel = 0;
+
+       
+
+        private void picAdd_Click(object sender, EventArgs e)
         {
-            TextBox txtAddVehicle = new TextBox();
-            txtAddVehicle.Location = new Point(200, 230);
-            this.Controls.Add(txtAddVehicle);
-            //Cindy la boss 
+            if (counterAdd < 6)
+            {
+                myPointTextBox.Y += 40;
+                myPointPictureBox.Y += 40;
+                myPointPictureBox2.Y += 40;
+                TextBox txtAddVehicle = new TextBox();
+                txtAddVehicle.Location = myPointTextBox;
+                txtAddVehicle.Size = new Size(131, 26);
+                txtAddVehicle.Font = new Font("Microsoft Sans Serif", 12);
+                this.Controls.Add(txtAddVehicle);
+                txtBoxList.Add(txtAddVehicle);
+                picAdd.Location = myPointPictureBox; 
+                PictureBox picDel = new PictureBox();
+                picDel.Location = myPointPictureBox2;
+                picDel.Size = new Size(26, 26);
+                picDel.Image = global::FunkyBox.Properties.Resources.minus1;
+                picDel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+                picDel.Click += new System.EventHandler(this.picDel_Click);
+                this.Controls.Add(picDel);
+                picBoxList.Add(picDel);
+                counterAdd++;
+
+            }
+            else
+            {
+                MessageBox.Show("La limite de véhicules par locataire est atteinte.");
+            }
+        }//endPicAddClick
+
+        private void picDel_Click(object sender, System.EventArgs e)
+        {
+            MessageBox.Show(txtBoxList[counterAdd].Text);
         }
-    }
-}
+
+
+
+
+    }//endClass
+}//endNamespace
