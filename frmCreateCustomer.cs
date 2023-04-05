@@ -35,7 +35,7 @@ namespace FunkyBox
         {
             TextBox txtAddVehicle = new TextBox();
             txtAddVehicle.Location = new Point(200, 230);
-            this.Add(txtAddVehicle);
+            this.Controls.Add(txtAddVehicle);
         }
     }
 }
