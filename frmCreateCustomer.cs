@@ -36,7 +36,7 @@ namespace FunkyBox
             TextBox txtAddVehicle = new TextBox();
             txtAddVehicle.Location = new Point(200, 230);
             this.Controls.Add(txtAddVehicle);
-            ojkoj
+            //NICO le boss 
         }
     }
 }
