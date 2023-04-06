@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassPOS.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="frmCreateCustomer.cs">
       <SubType>Form</SubType>

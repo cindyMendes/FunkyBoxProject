@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Collections.Specialized.BitVector32;
 
 namespace FunkyBox
 {
@@ -16,27 +17,28 @@ namespace FunkyBox
         public frmCreateCustomer()
         {
             InitializeComponent();
-        }
+        } // end frmCreateCustomer
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            List<string> oneLP = new List<string>();
-            oneLP.Add("SD-564-FD");
-            oneLP.Add("IU-598-TY");
-            List<string> twoLP = new List<string>();
-            List<string> threeLP = new List<string>();
-            List<string> fourLP = new List<string>();
-            Customer oneCustomer = new Customer("Laurent", "Campan", 44, "Rue", "Hérold", "06000", "Nice", oneLP);
-            Customer twoCustomer = new Customer("Nicolas", "Raoux", 170, "Rue", "Henri Martin", "06330", "Roquefort-Les-Pins", twoLP);
-            Customer threeCustomer = new Customer("Cindy", "Mendes", 1, "Chemin", "des Lavandins", "06800", "Cagnes-Sur-Mer", threeLP);
-            Customer fourCustomer = new Customer("Qaïs", "Hamadou", 29, "Avenue", "Jean Médecin", "06000", "Nice", fourLP);
+            //List<string> oneLP = new List<string>();
+            //oneLP.Add("SD-564-FD");
+            //oneLP.Add("IU-598-TY");
+            //List<string> twoLP = new List<string>();
+            //List<string> threeLP = new List<string>();
+            //List<string> fourLP = new List<string>();
+            //Customer oneCustomer = new Customer("Laurent", "Campan", 44, "Rue", "Hérold", "06000", "Nice", oneLP);
+            //Customer twoCustomer = new Customer("Nicolas", "Raoux", 170, "Rue", "Henri Martin", "06330", "Roquefort-Les-Pins", twoLP);
+            //Customer threeCustomer = new Customer("Cindy", "Mendes", 1, "Chemin", "des Lavandins", "06800", "Cagnes-Sur-Mer", threeLP);
+            //Customer fourCustomer = new Customer("Qaïs", "Hamadou", 29, "Avenue", "Jean Médecin", "06000", "Nice", fourLP);
 
-            MessageBox.Show(oneCustomer.ToString() + Environment.NewLine + twoCustomer.ToString());
+            //MessageBox.Show(oneCustomer.ToString());
             //MessageBox.Show(twoCustomer.ToString());
             //MessageBox.Show(threeCustomer.ToString());
             //MessageBox.Show(fourCustomer.ToString());
 
-        }
+
+        } // end btnSave_Click
 
         Point myPointTextBox = new Point(683, 115);
         Point myPointPictureBox = new Point(876, 115);
@@ -91,6 +93,7 @@ namespace FunkyBox
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-    }//endClass
-}//endNamespace
+        } // end btnCancel_Click
+
+    } // end Class
+} // end namespace
