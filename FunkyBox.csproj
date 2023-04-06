@@ -59,6 +59,12 @@
     <Compile Include="frmCreateGarage.Designer.cs">
       <DependentUpon>frmCreateGarage.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCreateParking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateParking.Designer.cs">
+      <DependentUpon>frmCreateParking.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDisplayCustomers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,9 +82,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCreateCustomer.resx">
       <DependentUpon>frmCreateCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCreateGarage.resx">
-      <DependentUpon>frmCreateGarage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDisplayCustomers.resx">
       <DependentUpon>frmDisplayCustomers.cs</DependentUpon>
@@ -109,12 +112,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\FB12.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\plus.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_462636502_9cDAYuyVvBY4qYJlHjW7vqar5HYS8h8x.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

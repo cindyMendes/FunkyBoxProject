@@ -1,4 +1,6 @@
-﻿namespace FunkyBox
+﻿using System.Windows.Forms;
+
+namespace FunkyBox
 {
     partial class frmLogin
     {
@@ -41,9 +43,12 @@
             // log
             // 
             this.log.AutoSize = true;
-            this.log.Location = new System.Drawing.Point(41, 37);
+            this.log.BackColor = System.Drawing.Color.Transparent;
+            this.log.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.log.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.log.Location = new System.Drawing.Point(55, 28);
             this.log.Name = "log";
-            this.log.Size = new System.Drawing.Size(33, 13);
+            this.log.Size = new System.Drawing.Size(44, 18);
             this.log.TabIndex = 0;
             this.log.Text = "Login";
             this.log.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -51,53 +56,66 @@
             // mdp
             // 
             this.mdp.AutoSize = true;
-            this.mdp.Location = new System.Drawing.Point(41, 93);
+            this.mdp.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mdp.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.mdp.Location = new System.Drawing.Point(17, 64);
             this.mdp.Name = "mdp";
-            this.mdp.Size = new System.Drawing.Size(71, 13);
+            this.mdp.Size = new System.Drawing.Size(98, 18);
             this.mdp.TabIndex = 1;
             this.mdp.Text = "Mot de passe";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(147, 30);
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(133, 26);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(125, 20);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(147, 86);
+            this.textBox2.Location = new System.Drawing.Point(133, 62);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(125, 20);
             this.textBox2.TabIndex = 3;
             this.textBox2.UseSystemPasswordChar = true;
             // 
             // valid
             // 
-            this.valid.Location = new System.Drawing.Point(44, 176);
+            this.valid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.valid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.valid.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valid.ForeColor = System.Drawing.Color.Black;
+            this.valid.Location = new System.Drawing.Point(83, 224);
             this.valid.Name = "valid";
-            this.valid.Size = new System.Drawing.Size(75, 23);
+            this.valid.Size = new System.Drawing.Size(122, 34);
             this.valid.TabIndex = 4;
             this.valid.Text = "Valider";
-            this.valid.UseVisualStyleBackColor = true;
+            this.valid.UseVisualStyleBackColor = false;
             this.valid.Click += new System.EventHandler(this.valid_Click);
             // 
             // Quit
             // 
-            this.Quit.Location = new System.Drawing.Point(147, 176);
+            this.Quit.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Quit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Quit.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Quit.ForeColor = System.Drawing.Color.Black;
+            this.Quit.Location = new System.Drawing.Point(83, 286);
             this.Quit.Name = "Quit";
-            this.Quit.Size = new System.Drawing.Size(75, 23);
+            this.Quit.Size = new System.Drawing.Size(122, 34);
             this.Quit.TabIndex = 5;
             this.Quit.Text = "Quitter";
-            this.Quit.UseVisualStyleBackColor = true;
+            this.Quit.UseVisualStyleBackColor = false;
             this.Quit.Click += new System.EventHandler(this.Quit_Click);
             // 
             // checkBox
             // 
             this.checkBox.AutoSize = true;
-            this.checkBox.Location = new System.Drawing.Point(147, 112);
+            this.checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.checkBox.Location = new System.Drawing.Point(133, 99);
             this.checkBox.Name = "checkBox";
-            this.checkBox.Size = new System.Drawing.Size(125, 17);
+            this.checkBox.Size = new System.Drawing.Size(139, 19);
             this.checkBox.TabIndex = 6;
             this.checkBox.Text = "Afficher les caratères";
             this.checkBox.UseVisualStyleBackColor = true;
@@ -106,10 +124,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(65, 145);
+            this.label3.Location = new System.Drawing.Point(55, 164);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(157, 13);
+            this.label3.Size = new System.Drawing.Size(179, 15);
             this.label3.TabIndex = 7;
             this.label3.Text = "Mot de passe incorrect. Désolé.";
             this.label3.Visible = false;
@@ -118,7 +137,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(309, 244);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
+            this.ClientSize = new System.Drawing.Size(290, 369);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.checkBox);
             this.Controls.Add(this.Quit);

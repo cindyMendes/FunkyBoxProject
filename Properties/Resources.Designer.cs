@@ -63,6 +63,26 @@ namespace FunkyBox.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _240_F_462636502_9cDAYuyVvBY4qYJlHjW7vqar5HYS8h8x {
+            get {
+                object obj = ResourceManager.GetObject("240_F_462636502_9cDAYuyVvBY4qYJlHjW7vqar5HYS8h8x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FB12 {
+            get {
+                object obj = ResourceManager.GetObject("FB12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap minus {
             get {
                 object obj = ResourceManager.GetObject("minus", resourceCulture);
