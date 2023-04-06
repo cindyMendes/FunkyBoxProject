@@ -30,14 +30,15 @@ namespace FunkyBox
             {
                 if (textBox2.Text == "mdp")
                     this.Hide();
-            }
-            else
+                else
                 label3.Visible = true;
+            }
+            
 
            
         }
 
-        private void Quit_Click(object sender, EventArgs e)
+        private void Quit_Click (object sender, EventArgs e)
         {
             var resultat = MessageBox.Show("Etes-vous sûr de vouloir quitter ?","Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (resultat == DialogResult.OK)
