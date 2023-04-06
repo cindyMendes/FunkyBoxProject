@@ -53,6 +53,12 @@
     <Compile Include="frmCreateCustomer.Designer.cs">
       <DependentUpon>frmCreateCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCreateGarage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateGarage.Designer.cs">
+      <DependentUpon>frmCreateGarage.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDisplayCustomers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,10 +71,14 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Garage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCreateCustomer.resx">
       <DependentUpon>frmCreateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateGarage.resx">
+      <DependentUpon>frmCreateGarage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDisplayCustomers.resx">
       <DependentUpon>frmDisplayCustomers.cs</DependentUpon>
