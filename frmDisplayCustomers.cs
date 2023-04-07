@@ -14,7 +14,7 @@ namespace FunkyBox
     public partial class frmDisplayCustomers : Form
     {
 
-        private ClassPOS classPOS;
+        private Parking Parking;
 
 
 
@@ -28,12 +28,13 @@ namespace FunkyBox
             Customer threeCustomer = new Customer("Cindy", "Mendes", 1, "Chemin", "des Lavandins", "06800", "Cagnes-Sur-Mer", "DY-104-MG");
             Customer fourCustomer = new Customer("Qaïs", "Hamadou", 29, "Avenue", "Jean Médecin", "06000", "Nice", "PO-921-NA");
 
-            this.classPOS = new ClassPOS("TEST", "Test Class POS");
+            //this.Parking = new Parking("TEST", "Test Class POS");
+            this.Parking = new Parking();
 
-            this.classPOS.Ajouter(oneCustomer);
-            this.classPOS.Ajouter(twoCustomer);
-            this.classPOS.Ajouter(threeCustomer);
-            this.classPOS.Ajouter(fourCustomer);
+            this.Parking.Ajouter(oneCustomer);
+            this.Parking.Ajouter(twoCustomer);
+            this.Parking.Ajouter(threeCustomer);
+            this.Parking.Ajouter(fourCustomer);
 
             this.afficheCustomers();
 
@@ -42,7 +43,7 @@ namespace FunkyBox
 
         private void afficheCustomers()
         {
-            this.grdCustomers.DataSource = classPOS.ListerStagiaires();
+            this.grdCustomers.DataSource = Parking.ListCustomer();
             this.grdCustomers.Refresh();
         } // end afficheCustomers
 

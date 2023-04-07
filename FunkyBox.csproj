@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClassPOS.cs" />
+    <Compile Include="Parking.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="frmCreateCustomer.cs">
       <SubType>Form</SubType>
@@ -83,6 +83,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCreateCustomer.resx">
       <DependentUpon>frmCreateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateParking.resx">
+      <DependentUpon>frmCreateParking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDisplayCustomers.resx">
       <DependentUpon>frmDisplayCustomers.cs</DependentUpon>

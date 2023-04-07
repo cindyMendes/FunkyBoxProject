@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FunkyBox
 {
-    internal class ClassPOS
+    internal class Parking
     {
 
         private string code;
@@ -35,7 +35,7 @@ namespace FunkyBox
             this.allCustomers.Add(unCustomer.LicencePlate, unCustomer);
         }
 
-        public DataTable ListerStagiaires()
+        public DataTable ListCustomer()
         {
             this.dtCustomers.Clear();
             foreach (Customer oneCustomer in this.allCustomers.Values)
@@ -58,10 +58,10 @@ namespace FunkyBox
         }
 
 
-        public ClassPOS(String code, String name)
+        public Parking()
         {
-            this.code = code;
-            this.name = name;
+            //this.code = code;
+            //this.name = name;
  
             allCustomers = new SortedDictionary<string, Customer>();
             dtCustomers = new DataTable();

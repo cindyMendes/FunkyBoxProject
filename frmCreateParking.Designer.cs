@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtBoxparkingName = new System.Windows.Forms.TextBox();
+            this.txtParkingName = new System.Windows.Forms.TextBox();
             this.lblParkingName = new System.Windows.Forms.Label();
             this.lblParkingNumber = new System.Windows.Forms.Label();
-            this.txtBoxparkingNumber = new System.Windows.Forms.TextBox();
+            this.txtParkingNumber = new System.Windows.Forms.TextBox();
             this.lblPkgMainAddr = new System.Windows.Forms.Label();
-            this.txtBoxPkgMainAddr = new System.Windows.Forms.TextBox();
+            this.txtParkingAddr1 = new System.Windows.Forms.TextBox();
             this.lblPkgAddtnlAddr = new System.Windows.Forms.Label();
-            this.txtBoxPkgAddtnlAddr = new System.Windows.Forms.TextBox();
+            this.txtParkingAddr2 = new System.Windows.Forms.TextBox();
             this.lblPkgAddressNmbr = new System.Windows.Forms.Label();
-            this.txtBoxPkgAddressNmbr = new System.Windows.Forms.TextBox();
+            this.txtStreetNumber = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // txtBoxparkingName
+            // txtParkingName
             // 
-            this.txtBoxparkingName.Location = new System.Drawing.Point(172, 40);
-            this.txtBoxparkingName.Name = "txtBoxparkingName";
-            this.txtBoxparkingName.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxparkingName.TabIndex = 0;
+            this.txtParkingName.Location = new System.Drawing.Point(172, 40);
+            this.txtParkingName.Name = "txtParkingName";
+            this.txtParkingName.Size = new System.Drawing.Size(100, 20);
+            this.txtParkingName.TabIndex = 0;
             // 
             // lblParkingName
             // 
@@ -65,12 +65,12 @@
             this.lblParkingNumber.TabIndex = 3;
             this.lblParkingNumber.Text = "Numéro du parking";
             // 
-            // txtBoxparkingNumber
+            // txtParkingNumber
             // 
-            this.txtBoxparkingNumber.Location = new System.Drawing.Point(172, 75);
-            this.txtBoxparkingNumber.Name = "txtBoxparkingNumber";
-            this.txtBoxparkingNumber.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxparkingNumber.TabIndex = 2;
+            this.txtParkingNumber.Location = new System.Drawing.Point(172, 75);
+            this.txtParkingNumber.Name = "txtParkingNumber";
+            this.txtParkingNumber.Size = new System.Drawing.Size(100, 20);
+            this.txtParkingNumber.TabIndex = 2;
             // 
             // lblPkgMainAddr
             // 
@@ -81,12 +81,12 @@
             this.lblPkgMainAddr.TabIndex = 5;
             this.lblPkgMainAddr.Text = "Adresse principale du parking";
             // 
-            // txtBoxPkgMainAddr
+            // txtParkingAddr1
             // 
-            this.txtBoxPkgMainAddr.Location = new System.Drawing.Point(172, 124);
-            this.txtBoxPkgMainAddr.Name = "txtBoxPkgMainAddr";
-            this.txtBoxPkgMainAddr.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxPkgMainAddr.TabIndex = 4;
+            this.txtParkingAddr1.Location = new System.Drawing.Point(172, 124);
+            this.txtParkingAddr1.Name = "txtParkingAddr1";
+            this.txtParkingAddr1.Size = new System.Drawing.Size(100, 20);
+            this.txtParkingAddr1.TabIndex = 4;
             // 
             // lblPkgAddtnlAddr
             // 
@@ -97,12 +97,12 @@
             this.lblPkgAddtnlAddr.TabIndex = 7;
             this.lblPkgAddtnlAddr.Text = "Complément d\'adresse";
             // 
-            // txtBoxPkgAddtnlAddr
+            // txtParkingAddr2
             // 
-            this.txtBoxPkgAddtnlAddr.Location = new System.Drawing.Point(172, 170);
-            this.txtBoxPkgAddtnlAddr.Name = "txtBoxPkgAddtnlAddr";
-            this.txtBoxPkgAddtnlAddr.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxPkgAddtnlAddr.TabIndex = 6;
+            this.txtParkingAddr2.Location = new System.Drawing.Point(172, 170);
+            this.txtParkingAddr2.Name = "txtParkingAddr2";
+            this.txtParkingAddr2.Size = new System.Drawing.Size(100, 20);
+            this.txtParkingAddr2.TabIndex = 6;
             // 
             // lblPkgAddressNmbr
             // 
@@ -113,12 +113,12 @@
             this.lblPkgAddressNmbr.TabIndex = 9;
             this.lblPkgAddressNmbr.Text = "N° d\'adresse du parking";
             // 
-            // txtBoxPkgAddressNmbr
+            // txtStreetNumber
             // 
-            this.txtBoxPkgAddressNmbr.Location = new System.Drawing.Point(172, 208);
-            this.txtBoxPkgAddressNmbr.Name = "txtBoxPkgAddressNmbr";
-            this.txtBoxPkgAddressNmbr.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxPkgAddressNmbr.TabIndex = 8;
+            this.txtStreetNumber.Location = new System.Drawing.Point(172, 208);
+            this.txtStreetNumber.Name = "txtStreetNumber";
+            this.txtStreetNumber.Size = new System.Drawing.Size(100, 20);
+            this.txtStreetNumber.TabIndex = 8;
             // 
             // frmCreateParking
             // 
@@ -126,15 +126,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblPkgAddressNmbr);
-            this.Controls.Add(this.txtBoxPkgAddressNmbr);
+            this.Controls.Add(this.txtStreetNumber);
             this.Controls.Add(this.lblPkgAddtnlAddr);
-            this.Controls.Add(this.txtBoxPkgAddtnlAddr);
+            this.Controls.Add(this.txtParkingAddr2);
             this.Controls.Add(this.lblPkgMainAddr);
-            this.Controls.Add(this.txtBoxPkgMainAddr);
+            this.Controls.Add(this.txtParkingAddr1);
             this.Controls.Add(this.lblParkingNumber);
-            this.Controls.Add(this.txtBoxparkingNumber);
+            this.Controls.Add(this.txtParkingNumber);
             this.Controls.Add(this.lblParkingName);
-            this.Controls.Add(this.txtBoxparkingName);
+            this.Controls.Add(this.txtParkingName);
             this.Name = "frmCreateParking";
             this.Text = "frmCreateParking";
             this.ResumeLayout(false);
@@ -144,15 +144,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtBoxparkingName;
+        private System.Windows.Forms.TextBox txtParkingName;
         private System.Windows.Forms.Label lblParkingName;
         private System.Windows.Forms.Label lblParkingNumber;
-        private System.Windows.Forms.TextBox txtBoxparkingNumber;
+        private System.Windows.Forms.TextBox txtParkingNumber;
         private System.Windows.Forms.Label lblPkgMainAddr;
-        private System.Windows.Forms.TextBox txtBoxPkgMainAddr;
+        private System.Windows.Forms.TextBox txtParkingAddr1;
         private System.Windows.Forms.Label lblPkgAddtnlAddr;
-        private System.Windows.Forms.TextBox txtBoxPkgAddtnlAddr;
+        private System.Windows.Forms.TextBox txtParkingAddr2;
         private System.Windows.Forms.Label lblPkgAddressNmbr;
-        private System.Windows.Forms.TextBox txtBoxPkgAddressNmbr;
+        private System.Windows.Forms.TextBox txtStreetNumber;
     }
 }
