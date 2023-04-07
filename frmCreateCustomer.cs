@@ -27,12 +27,12 @@ namespace FunkyBox
             //List<string> twoLP = new List<string>();
             //List<string> threeLP = new List<string>();
             //List<string> fourLP = new List<string>();
-            //Customer oneCustomer = new Customer("Laurent", "Campan", 44, "Rue", "Hérold", "06000", "Nice", oneLP);
+            //Customer c = new Customer("Laurent", "Campan", 44, "Rue", "Hérold", "06000", "Nice", oneLP);
             //Customer twoCustomer = new Customer("Nicolas", "Raoux", 170, "Rue", "Henri Martin", "06330", "Roquefort-Les-Pins", twoLP);
             //Customer threeCustomer = new Customer("Cindy", "Mendes", 1, "Chemin", "des Lavandins", "06800", "Cagnes-Sur-Mer", threeLP);
             //Customer fourCustomer = new Customer("Qaïs", "Hamadou", 29, "Avenue", "Jean Médecin", "06000", "Nice", fourLP);
 
-            //MessageBox.Show(oneCustomer.ToString());
+            //MessageBox.Show(c.ToString());
             //MessageBox.Show(twoCustomer.ToString());
             //MessageBox.Show(threeCustomer.ToString());
             //MessageBox.Show(fourCustomer.ToString());

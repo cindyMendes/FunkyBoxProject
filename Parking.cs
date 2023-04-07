@@ -38,18 +38,18 @@ namespace FunkyBox
         public DataTable ListCustomer()
         {
             this.dtCustomers.Clear();
-            foreach (Customer oneCustomer in this.allCustomers.Values)
+            foreach (Customer c in this.allCustomers.Values)
             {
                 DataRow dr;   
                 dr = this.dtCustomers.NewRow();
-                dr[0] = oneCustomer.FirstName;
-                dr[1] = oneCustomer.LastName;
-                dr[2] = oneCustomer.StreetNumber;
-                dr[3] = oneCustomer.StreetType;
-                dr[4] = oneCustomer.StreetName;
-                dr[5] = oneCustomer.PostalCode;
-                dr[6] = oneCustomer.City;
-                dr[7] = oneCustomer.LicencePlate;
+                dr[0] = c.FirstName;
+                dr[1] = c.LastName;
+                dr[2] = c.StreetNumber;
+                dr[3] = c.StreetType;
+                dr[4] = c.StreetName;
+                dr[5] = c.PostalCode;
+                dr[6] = c.City;
+                dr[7] = c.LicencePlate;
 
                 this.dtCustomers.Rows.Add(dr);
             }
