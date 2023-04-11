@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDisplayGarage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisplayGarage.Designer.cs">
+      <DependentUpon>frmDisplayGarage.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDisplayCustomers.resx">
       <DependentUpon>frmDisplayCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisplayGarage.resx">
+      <DependentUpon>frmDisplayGarage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>

@@ -87,14 +87,14 @@ namespace FunkyBox
             set { startRent = value; }
         }
 
-        public Garage(string GI, string PN, double MR, double MF, string TN, DateTime SR)
+        public Garage(string GarageId, string ParkingName, double MonthlyRent, double MonthlyFees, string TenantName, DateTime StartRent)
         {
-            this.GarageId = GI;
-            this.ParkingName = PN;
-            this.MonthlyRent = MR;
-            this.MonthlyFees = MF;
-            this.TenantName = TN;
-            this.StartRent = SR;
-        }   
+            this.GarageId = GarageId;
+            this.ParkingName = ParkingName;
+            this.MonthlyRent = MonthlyRent;
+            this.MonthlyFees = MonthlyFees;
+            this.TenantName = TenantName;
+            this.StartRent = StartRent;
+        }
     }// endclass
 }//endnamespace
