@@ -1,6 +1,6 @@
 ﻿namespace FunkyBox
 {
-    partial class frmDisplayGarage
+    partial class frmDisplayGarages
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvDisplayGarages = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDisplayGarages)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvDisplayGarages
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(1, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(797, 292);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvDisplayGarages.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDisplayGarages.Location = new System.Drawing.Point(1, 0);
+            this.dgvDisplayGarages.Name = "dgvDisplayGarages";
+            this.dgvDisplayGarages.Size = new System.Drawing.Size(797, 292);
+            this.dgvDisplayGarages.TabIndex = 0;
             // 
-            // frmDisplayGarage
+            // frmDisplayGarages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "frmDisplayGarage";
+            this.Controls.Add(this.dgvDisplayGarages);
+            this.Name = "frmDisplayGarages";
             this.Text = "frmDisplayGarage";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDisplayGarages)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvDisplayGarages;
     }
 }
