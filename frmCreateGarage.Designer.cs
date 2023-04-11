@@ -125,6 +125,7 @@
             this.btnCancel.TabIndex = 25;
             this.btnCancel.Text = "Annuler";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -136,6 +137,7 @@
             this.btnSave.TabIndex = 26;
             this.btnSave.Text = "Valider";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtParkingName
             // 

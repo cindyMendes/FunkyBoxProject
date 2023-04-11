@@ -96,6 +96,9 @@
     <EmbeddedResource Include="frmCreateCustomer.resx">
       <DependentUpon>frmCreateCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateGarage.resx">
+      <DependentUpon>frmCreateGarage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCreateParking.resx">
       <DependentUpon>frmCreateParking.cs</DependentUpon>
     </EmbeddedResource>

@@ -35,5 +35,12 @@ namespace FunkyBox
             displayGarages.Rows.Add(dr);
             dgvDisplayGarages.DataSource = displayGarages;
         }
+
+        private void btnAddGarage_Click(object sender, EventArgs e)
+        {
+            this.Hide(); 
+            frmCreateGarage frmCG = new frmCreateGarage();
+            frmCG.ShowDialog();
+        }
     }
 }

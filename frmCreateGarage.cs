@@ -29,5 +29,22 @@ namespace FunkyBox
             dr[5] = txtStartRent.Text;
             displayGarages.Rows.Add(dr);
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmDisplayGarages frmDG = new frmDisplayGarages();
+            frmDG.ShowDialog();
+            this.Close();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddGarage();
+            frmDisplayGarages frmDG = new frmDisplayGarages();
+            frmDG.ShowDialog();
+            this.Close();
+        }
     }
 }
