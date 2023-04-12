@@ -57,9 +57,9 @@
             this.btnValid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnValid.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValid.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnValid.Location = new System.Drawing.Point(198, 490);
+            this.btnValid.Location = new System.Drawing.Point(172, 473);
             this.btnValid.Name = "btnValid";
-            this.btnValid.Size = new System.Drawing.Size(102, 36);
+            this.btnValid.Size = new System.Drawing.Size(129, 53);
             this.btnValid.TabIndex = 35;
             this.btnValid.Text = "Valider";
             this.btnValid.UseVisualStyleBackColor = false;
@@ -67,11 +67,12 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnCancel.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(619, 490);
+            this.btnCancel.ForeColor = System.Drawing.Color.Black;
+            this.btnCancel.Location = new System.Drawing.Point(522, 473);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(103, 36);
+            this.btnCancel.Size = new System.Drawing.Size(129, 53);
             this.btnCancel.TabIndex = 36;
             this.btnCancel.Text = "Annuler";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -81,7 +82,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lblTitle.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblTitle.Location = new System.Drawing.Point(37, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(345, 55);
@@ -102,7 +103,7 @@
             // 
             this.lblLastName.AutoSize = true;
             this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblLastName.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblLastName.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblLastName.Location = new System.Drawing.Point(49, 130);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(41, 18);
@@ -113,7 +114,7 @@
             // 
             this.lblStreetNumber.AutoSize = true;
             this.lblStreetNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblStreetNumber.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblStreetNumber.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblStreetNumber.Location = new System.Drawing.Point(49, 166);
             this.lblStreetNumber.Name = "lblStreetNumber";
             this.lblStreetNumber.Size = new System.Drawing.Size(25, 18);
@@ -124,7 +125,7 @@
             // 
             this.lblStreetType.AutoSize = true;
             this.lblStreetType.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblStreetType.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblStreetType.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblStreetType.Location = new System.Drawing.Point(49, 207);
             this.lblStreetType.Name = "lblStreetType";
             this.lblStreetType.Size = new System.Drawing.Size(91, 18);
@@ -135,7 +136,7 @@
             // 
             this.lblStreetName.AutoSize = true;
             this.lblStreetName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblStreetName.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblStreetName.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblStreetName.Location = new System.Drawing.Point(389, 93);
             this.lblStreetName.Name = "lblStreetName";
             this.lblStreetName.Size = new System.Drawing.Size(62, 18);
@@ -146,7 +147,7 @@
             // 
             this.lblPostalCode.AutoSize = true;
             this.lblPostalCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblPostalCode.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblPostalCode.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblPostalCode.Location = new System.Drawing.Point(389, 130);
             this.lblPostalCode.Name = "lblPostalCode";
             this.lblPostalCode.Size = new System.Drawing.Size(90, 18);
@@ -157,7 +158,7 @@
             // 
             this.lblCity.AutoSize = true;
             this.lblCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblCity.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblCity.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblCity.Location = new System.Drawing.Point(389, 166);
             this.lblCity.Name = "lblCity";
             this.lblCity.Size = new System.Drawing.Size(34, 18);
@@ -168,7 +169,7 @@
             // 
             this.lblLicence.AutoSize = true;
             this.lblLicence.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblLicence.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblLicence.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblLicence.Location = new System.Drawing.Point(389, 207);
             this.lblLicence.Name = "lblLicence";
             this.lblLicence.Size = new System.Drawing.Size(108, 18);
@@ -235,7 +236,7 @@
             // 
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblFirstName.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblFirstName.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblFirstName.Location = new System.Drawing.Point(49, 89);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(61, 18);
@@ -279,6 +280,7 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnValid);
             this.Controls.Add(this.lblTitle);
+            this.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.Name = "frmDisplayCustomers";
             this.Text = "Afficher clients";
             ((System.ComponentModel.ISupportInitialize)(this.grdCustomers)).EndInit();

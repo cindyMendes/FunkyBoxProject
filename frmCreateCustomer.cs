@@ -113,7 +113,6 @@ namespace FunkyBox
             this.Close();
         } // end btnCancel_Click
 
-     
 
     } // end Class
 } // end namespace

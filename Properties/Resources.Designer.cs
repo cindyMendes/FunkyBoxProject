@@ -63,6 +63,17 @@ namespace FunkyBox.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _14862026_creation_de_logo_fb_initiale_fb_lettre_logo_design_monogramme_vector_design_pro_vecteur_vectoriel {
+            get {
+                object obj = ResourceManager.GetObject("14862026-creation-de-logo-fb-initiale-fb-lettre-logo-design-monogramme-vector-des" +
+                        "ign-pro-vecteur-vectoriel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _240_F_462636502_9cDAYuyVvBY4qYJlHjW7vqar5HYS8h8x {
             get {
                 object obj = ResourceManager.GetObject("240_F_462636502_9cDAYuyVvBY4qYJlHjW7vqar5HYS8h8x", resourceCulture);
@@ -103,6 +114,16 @@ namespace FunkyBox.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap oiopiop {
+            get {
+                object obj = ResourceManager.GetObject("oiopiop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap plus {
             get {
                 object obj = ResourceManager.GetObject("plus", resourceCulture);
@@ -116,6 +137,16 @@ namespace FunkyBox.Properties {
         internal static System.Drawing.Bitmap plus1 {
             get {
                 object obj = ResourceManager.GetObject("plus1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sans_titre {
+            get {
+                object obj = ResourceManager.GetObject("Sans titre", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

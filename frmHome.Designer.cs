@@ -73,7 +73,7 @@
             // afficherToolStripMenuItem
             // 
             this.afficherToolStripMenuItem.Name = "afficherToolStripMenuItem";
-            this.afficherToolStripMenuItem.Size = new System.Drawing.Size(180, 36);
+            this.afficherToolStripMenuItem.Size = new System.Drawing.Size(171, 36);
             this.afficherToolStripMenuItem.Text = "Afficher";
             this.afficherToolStripMenuItem.Click += new System.EventHandler(this.afficherToolStripMenuItem_Click);
             // 
@@ -89,14 +89,14 @@
             // ajouterToolStripMenuItem1
             // 
             this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
-            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(180, 36);
+            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(171, 36);
             this.ajouterToolStripMenuItem1.Text = "Ajouter";
             this.ajouterToolStripMenuItem1.Click += new System.EventHandler(this.ajouterToolStripMenuItem1_Click);
             // 
             // afficherToolStripMenuItem1
             // 
             this.afficherToolStripMenuItem1.Name = "afficherToolStripMenuItem1";
-            this.afficherToolStripMenuItem1.Size = new System.Drawing.Size(180, 36);
+            this.afficherToolStripMenuItem1.Size = new System.Drawing.Size(171, 36);
             this.afficherToolStripMenuItem1.Text = "Afficher";
             this.afficherToolStripMenuItem1.Click += new System.EventHandler(this.afficherToolStripMenuItem1_Click);
             // 
@@ -125,6 +125,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BackgroundImage = global::FunkyBox.Properties.Resources._14862026_creation_de_logo_fb_initiale_fb_lettre_logo_design_monogramme_vector_design_pro_vecteur_vectoriel;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;

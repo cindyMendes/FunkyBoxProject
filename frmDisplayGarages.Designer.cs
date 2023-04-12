@@ -36,6 +36,7 @@
             // 
             // dgvDisplayGarages
             // 
+            this.dgvDisplayGarages.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(26)))), ((int)(((byte)(30)))));
             this.dgvDisplayGarages.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDisplayGarages.Location = new System.Drawing.Point(2, 114);
             this.dgvDisplayGarages.Name = "dgvDisplayGarages";
@@ -45,9 +46,9 @@
             // 
             // btnAddGarage
             // 
-            this.btnAddGarage.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnAddGarage.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnAddGarage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddGarage.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAddGarage.ForeColor = System.Drawing.Color.Black;
             this.btnAddGarage.Location = new System.Drawing.Point(772, 425);
             this.btnAddGarage.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddGarage.Name = "btnAddGarage";
@@ -61,22 +62,24 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblTitle.Location = new System.Drawing.Point(68, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(309, 55);
+            this.lblTitle.Size = new System.Drawing.Size(282, 55);
             this.lblTitle.TabIndex = 18;
-            this.lblTitle.Text = "Box existants";
+            this.lblTitle.Text = "Afficher Box";
             // 
             // frmDisplayGarages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnAddGarage);
             this.Controls.Add(this.dgvDisplayGarages);
             this.Name = "frmDisplayGarages";
-            this.Text = "frmDisplayGarage";
+            this.Text = "Affichage Box";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisplayGarages)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

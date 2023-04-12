@@ -49,6 +49,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblTitle.Location = new System.Drawing.Point(68, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(309, 55);
@@ -59,6 +60,7 @@
             // 
             this.lblGarageId.AutoSize = true;
             this.lblGarageId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGarageId.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblGarageId.Location = new System.Drawing.Point(74, 115);
             this.lblGarageId.Name = "lblGarageId";
             this.lblGarageId.Size = new System.Drawing.Size(152, 24);
@@ -69,6 +71,7 @@
             // 
             this.lblStartRent.AutoSize = true;
             this.lblStartRent.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStartRent.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblStartRent.Location = new System.Drawing.Point(74, 315);
             this.lblStartRent.Name = "lblStartRent";
             this.lblStartRent.Size = new System.Drawing.Size(157, 24);
@@ -79,6 +82,7 @@
             // 
             this.lblTenantName.AutoSize = true;
             this.lblTenantName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenantName.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblTenantName.Location = new System.Drawing.Point(74, 275);
             this.lblTenantName.Name = "lblTenantName";
             this.lblTenantName.Size = new System.Drawing.Size(153, 24);
@@ -89,6 +93,7 @@
             // 
             this.lblMonthlyFees.AutoSize = true;
             this.lblMonthlyFees.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonthlyFees.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblMonthlyFees.Location = new System.Drawing.Point(74, 235);
             this.lblMonthlyFees.Name = "lblMonthlyFees";
             this.lblMonthlyFees.Size = new System.Drawing.Size(183, 24);
@@ -99,6 +104,7 @@
             // 
             this.lblMonthlyRent.AutoSize = true;
             this.lblMonthlyRent.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonthlyRent.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblMonthlyRent.Location = new System.Drawing.Point(74, 195);
             this.lblMonthlyRent.Name = "lblMonthlyRent";
             this.lblMonthlyRent.Size = new System.Drawing.Size(135, 24);
@@ -109,6 +115,7 @@
             // 
             this.lblParkingName.AutoSize = true;
             this.lblParkingName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblParkingName.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblParkingName.Location = new System.Drawing.Point(74, 155);
             this.lblParkingName.Name = "lblParkingName";
             this.lblParkingName.Size = new System.Drawing.Size(145, 24);
@@ -117,32 +124,34 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.Red;
-            this.btnCancel.Location = new System.Drawing.Point(254, 437);
+            this.btnCancel.ForeColor = System.Drawing.Color.Black;
+            this.btnCancel.Location = new System.Drawing.Point(533, 450);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(120, 36);
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Annuler";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.LimeGreen;
-            this.btnSave.Location = new System.Drawing.Point(418, 437);
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(369, 450);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(120, 36);
             this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Valider";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtParkingName
             // 
             this.txtParkingName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtParkingName.Location = new System.Drawing.Point(254, 155);
+            this.txtParkingName.Location = new System.Drawing.Point(369, 155);
             this.txtParkingName.Name = "txtParkingName";
             this.txtParkingName.Size = new System.Drawing.Size(284, 26);
             this.txtParkingName.TabIndex = 2;
@@ -150,7 +159,7 @@
             // txtMonthlyFees
             // 
             this.txtMonthlyFees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMonthlyFees.Location = new System.Drawing.Point(254, 235);
+            this.txtMonthlyFees.Location = new System.Drawing.Point(369, 235);
             this.txtMonthlyFees.Name = "txtMonthlyFees";
             this.txtMonthlyFees.Size = new System.Drawing.Size(84, 26);
             this.txtMonthlyFees.TabIndex = 4;
@@ -158,7 +167,7 @@
             // txtGarageNb
             // 
             this.txtGarageNb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGarageNb.Location = new System.Drawing.Point(254, 115);
+            this.txtGarageNb.Location = new System.Drawing.Point(369, 115);
             this.txtGarageNb.Name = "txtGarageNb";
             this.txtGarageNb.Size = new System.Drawing.Size(84, 26);
             this.txtGarageNb.TabIndex = 1;
@@ -166,7 +175,7 @@
             // txtMonthlyRent
             // 
             this.txtMonthlyRent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMonthlyRent.Location = new System.Drawing.Point(254, 195);
+            this.txtMonthlyRent.Location = new System.Drawing.Point(369, 195);
             this.txtMonthlyRent.Name = "txtMonthlyRent";
             this.txtMonthlyRent.Size = new System.Drawing.Size(84, 26);
             this.txtMonthlyRent.TabIndex = 3;
@@ -174,7 +183,7 @@
             // txtTenantName
             // 
             this.txtTenantName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenantName.Location = new System.Drawing.Point(254, 275);
+            this.txtTenantName.Location = new System.Drawing.Point(369, 275);
             this.txtTenantName.Name = "txtTenantName";
             this.txtTenantName.Size = new System.Drawing.Size(284, 26);
             this.txtTenantName.TabIndex = 5;
@@ -182,7 +191,7 @@
             // txtStartRent
             // 
             this.txtStartRent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStartRent.Location = new System.Drawing.Point(254, 315);
+            this.txtStartRent.Location = new System.Drawing.Point(369, 315);
             this.txtStartRent.Name = "txtStartRent";
             this.txtStartRent.Size = new System.Drawing.Size(84, 26);
             this.txtStartRent.TabIndex = 6;
@@ -191,6 +200,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.txtStartRent);
             this.Controls.Add(this.txtTenantName);

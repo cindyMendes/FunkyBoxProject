@@ -149,5 +149,14 @@
   <ItemGroup>
     <None Include="Resources\240_F_462636502_9cDAYuyVvBY4qYJlHjW7vqar5HYS8h8x.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14862026-creation-de-logo-fb-initiale-fb-lettre-logo-design-monogramme-vector-design-pro-vecteur-vectoriel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oiopiop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sans titre.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
