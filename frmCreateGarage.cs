@@ -12,23 +12,14 @@ namespace FunkyBox
 {
     public partial class frmCreateGarage : Form
     {
-        public static DataTable displayGarages = new DataTable();
         public frmCreateGarage()
         {
             InitializeComponent();
         }
         public void AddGarage()
         {
-            Garage twoGarage = new Garage(txtGarageNb.Text, txtParkingName.Text, Double.Parse(txtMonthlyRent.Text), Double.Parse(txtMonthlyFees.Text), txtTenantName.Text, DateTime.Parse(txtStartRent.Text));
-            DataRow dr;
-            dr = displayGarages.NewRow();
-            dr[0] = twoGarage.GarageId;
-            dr[1] = twoGarage.ParkingName;
-            dr[2] = twoGarage.MonthlyRent;
-            dr[3] = twoGarage.MonthlyFees;
-            dr[4] = twoGarage.TenantName;
-            dr[5] = twoGarage.StartRent;
-            displayGarages.Rows.Add(dr);
+            Garage newGarage = new Garage(txtGarageNb.Text, txtParkingName.Text, Double.Parse(txtMonthlyRent.Text), Double.Parse(txtMonthlyFees.Text), txtTenantName.Text, DateTime.Parse(txtStartRent.Text));
+            frmDisplayGarages.sdGarages.Add(newGarage);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

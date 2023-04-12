@@ -7,14 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Collections.Specialized.BitVector32;
 
 namespace FunkyBox
 {
     internal partial class frmDisplayGarages : Form
     {
-        public Garage oneGarage = new Garage("jkgyf", "Nice Centre", 150, 15, "Dupont", new DateTime(2017, 8, 24));
-        public DataTable displayGarages = frmCreateGarage.displayGarages;
-        
+        public static List<Garage> sdGarages = new List<Garage>();
+        public static DataTable displayGarages = new DataTable();
 
         public frmDisplayGarages()
         {
@@ -30,15 +30,18 @@ namespace FunkyBox
                 displayGarages.Columns.Add(new DataColumn("Début de location", typeof(System.DateTime)));
             }
             
-            DataRow dr;
-            dr = displayGarages.NewRow();
-            dr[0] = oneGarage.GarageId;
-            dr[1] = oneGarage.ParkingName;
-            dr[2] = oneGarage.MonthlyRent;
-            dr[3] = oneGarage.MonthlyFees;
-            dr[4] = oneGarage.TenantName;
-            dr[5] = oneGarage.StartRent;
-            displayGarages.Rows.Add(dr);
+            foreach (Garage newGarage in sdGarages)
+            {
+                DataRow dr;
+                dr = displayGarages.NewRow();
+                dr[0] = newGarage.GarageId;
+                dr[1] = newGarage.ParkingName;
+                dr[2] = newGarage.MonthlyRent;
+                dr[3] = newGarage.MonthlyFees;
+                dr[4] = newGarage.TenantName;
+                dr[5] = newGarage.StartRent;
+                displayGarages.Rows.Add(dr);
+            }
             dgvDisplayGarages.DataSource = displayGarages;
             
         }
