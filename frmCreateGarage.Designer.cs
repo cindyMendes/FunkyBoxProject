@@ -39,7 +39,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.txtParkingName = new System.Windows.Forms.TextBox();
             this.txtMonthlyFees = new System.Windows.Forms.TextBox();
-            this.textGarageNb = new System.Windows.Forms.TextBox();
+            this.txtGarageNb = new System.Windows.Forms.TextBox();
             this.txtMonthlyRent = new System.Windows.Forms.TextBox();
             this.txtTenantName = new System.Windows.Forms.TextBox();
             this.txtStartRent = new System.Windows.Forms.TextBox();
@@ -122,9 +122,10 @@
             this.btnCancel.Location = new System.Drawing.Point(254, 437);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(120, 36);
-            this.btnCancel.TabIndex = 25;
+            this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Annuler";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -133,9 +134,10 @@
             this.btnSave.Location = new System.Drawing.Point(418, 437);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(120, 36);
-            this.btnSave.TabIndex = 26;
+            this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Valider";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtParkingName
             // 
@@ -143,7 +145,7 @@
             this.txtParkingName.Location = new System.Drawing.Point(254, 155);
             this.txtParkingName.Name = "txtParkingName";
             this.txtParkingName.Size = new System.Drawing.Size(284, 26);
-            this.txtParkingName.TabIndex = 27;
+            this.txtParkingName.TabIndex = 2;
             // 
             // txtMonthlyFees
             // 
@@ -151,15 +153,15 @@
             this.txtMonthlyFees.Location = new System.Drawing.Point(254, 235);
             this.txtMonthlyFees.Name = "txtMonthlyFees";
             this.txtMonthlyFees.Size = new System.Drawing.Size(84, 26);
-            this.txtMonthlyFees.TabIndex = 28;
+            this.txtMonthlyFees.TabIndex = 4;
             // 
-            // textGarageNb
+            // txtGarageNb
             // 
-            this.textGarageNb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textGarageNb.Location = new System.Drawing.Point(254, 115);
-            this.textGarageNb.Name = "textGarageNb";
-            this.textGarageNb.Size = new System.Drawing.Size(84, 26);
-            this.textGarageNb.TabIndex = 29;
+            this.txtGarageNb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGarageNb.Location = new System.Drawing.Point(254, 115);
+            this.txtGarageNb.Name = "txtGarageNb";
+            this.txtGarageNb.Size = new System.Drawing.Size(84, 26);
+            this.txtGarageNb.TabIndex = 1;
             // 
             // txtMonthlyRent
             // 
@@ -167,7 +169,7 @@
             this.txtMonthlyRent.Location = new System.Drawing.Point(254, 195);
             this.txtMonthlyRent.Name = "txtMonthlyRent";
             this.txtMonthlyRent.Size = new System.Drawing.Size(84, 26);
-            this.txtMonthlyRent.TabIndex = 30;
+            this.txtMonthlyRent.TabIndex = 3;
             // 
             // txtTenantName
             // 
@@ -175,7 +177,7 @@
             this.txtTenantName.Location = new System.Drawing.Point(254, 275);
             this.txtTenantName.Name = "txtTenantName";
             this.txtTenantName.Size = new System.Drawing.Size(284, 26);
-            this.txtTenantName.TabIndex = 31;
+            this.txtTenantName.TabIndex = 5;
             // 
             // txtStartRent
             // 
@@ -183,7 +185,7 @@
             this.txtStartRent.Location = new System.Drawing.Point(254, 315);
             this.txtStartRent.Name = "txtStartRent";
             this.txtStartRent.Size = new System.Drawing.Size(84, 26);
-            this.txtStartRent.TabIndex = 32;
+            this.txtStartRent.TabIndex = 6;
             // 
             // frmCreateGarage
             // 
@@ -193,7 +195,7 @@
             this.Controls.Add(this.txtStartRent);
             this.Controls.Add(this.txtTenantName);
             this.Controls.Add(this.txtMonthlyRent);
-            this.Controls.Add(this.textGarageNb);
+            this.Controls.Add(this.txtGarageNb);
             this.Controls.Add(this.txtMonthlyFees);
             this.Controls.Add(this.txtParkingName);
             this.Controls.Add(this.btnSave);
@@ -225,7 +227,7 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txtParkingName;
         private System.Windows.Forms.TextBox txtMonthlyFees;
-        private System.Windows.Forms.TextBox textGarageNb;
+        private System.Windows.Forms.TextBox txtGarageNb;
         private System.Windows.Forms.TextBox txtMonthlyRent;
         private System.Windows.Forms.TextBox txtTenantName;
         private System.Windows.Forms.TextBox txtStartRent;

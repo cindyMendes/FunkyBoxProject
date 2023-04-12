@@ -41,11 +41,11 @@ namespace FunkyBox
         /// <summary>
         /// Le numéro de voie
         /// </summary>
-        private int streetNumber;
+        private string streetNumber;
         /// <summary>
         /// Obtient et Définit le numéro de voie
         /// </summary>
-        public int StreetNumber
+        public string StreetNumber
         {
             get { return streetNumber; }
             set { streetNumber = value; }
@@ -154,7 +154,36 @@ namespace FunkyBox
             set { licencePlate = value; }
         }
 
-        public Customer(string FN, string LN, int SNb, string ST, string SNa, string PC, string Ct, string LP)
+        //public Customer(string FN, string LN, int SNb, string ST, string SNa, string PC, string Ct, string LP)
+        //{
+        //    this.FirstName = FN;
+        //    this.LastName = LN;
+        //    this.StreetNumber = SNb;
+        //    this.StreetType = ST;
+        //    this.StreetName = SNa;
+        //    this.PostalCode = PC;
+        //    this.City = Ct;
+        //    this.LicencePlate = LP;
+        //}
+
+        private DataTable newCustomer;
+
+        private SortedDictionary<String, Customer> allCustomersDict;
+
+        public SortedDictionary<String, Customer> AllCustomersDict
+        {
+            get { return allCustomersDict; }
+            set { allCustomersDict = value; }
+        }
+
+
+        public void Ajouter(Customer unCustomer)
+        {
+            this.allCustomersDict.Add(unCustomer.LicencePlate, unCustomer);
+        }
+
+
+        public Customer(string FN, string LN, string SNb, string ST, string SNa, string PC, string Ct, string LP)
         {
             this.FirstName = FN;
             this.LastName = LN;
@@ -164,15 +193,18 @@ namespace FunkyBox
             this.PostalCode = PC;
             this.City = Ct;
             this.LicencePlate = LP;
+
+            allCustomersDict  = new SortedDictionary<string, Customer>();
+            newCustomer = new DataTable();
+
+            this.newCustomer.Columns.Add(new DataColumn("Nom", typeof(System.String)));
+            this.newCustomer.Columns.Add(new DataColumn("Prénom", typeof(System.String)));
+            this.newCustomer.Columns.Add(new DataColumn("Numéro de rue", typeof(System.String)));
+            this.newCustomer.Columns.Add(new DataColumn("Type de voie", typeof(System.String)));
+            this.newCustomer.Columns.Add(new DataColumn("Adresse", typeof(System.String)));
+            this.newCustomer.Columns.Add(new DataColumn("Code postal", typeof(System.String)));
+            this.newCustomer.Columns.Add(new DataColumn("Ville", typeof(System.String)));
+            this.newCustomer.Columns.Add(new DataColumn("Plaque d'immatriculation", typeof(System.String)));
         }
-
-
-
-        //public override string ToString()
-        //{
-        //    return "Résultats : " + this.FirstName + " " + this.LastName + " " + this.StreetNumber + " " + this.StreetType + " " + this.StreetName + " " + this.PostalCode + " " + this.City;
-        //}
-
-
     } //endclass
 }//endnamespace

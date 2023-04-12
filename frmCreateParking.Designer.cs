@@ -38,11 +38,12 @@
             this.txtParkingAddr2 = new System.Windows.Forms.TextBox();
             this.lblPkgAddressNmbr = new System.Windows.Forms.Label();
             this.txtStreetNumber = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtParkingName
             // 
-            this.txtParkingName.Location = new System.Drawing.Point(172, 40);
+            this.txtParkingName.Location = new System.Drawing.Point(389, 115);
             this.txtParkingName.Name = "txtParkingName";
             this.txtParkingName.Size = new System.Drawing.Size(100, 20);
             this.txtParkingName.TabIndex = 0;
@@ -63,7 +64,7 @@
             this.lblParkingNumber.AutoSize = true;
             this.lblParkingNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblParkingNumber.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblParkingNumber.Location = new System.Drawing.Point(74, 155);
+            this.lblParkingNumber.Location = new System.Drawing.Point(79, 155);
             this.lblParkingNumber.Name = "lblParkingNumber";
             this.lblParkingNumber.Size = new System.Drawing.Size(173, 24);
             this.lblParkingNumber.TabIndex = 3;
@@ -71,7 +72,7 @@
             // 
             // txtParkingNumber
             // 
-            this.txtParkingNumber.Location = new System.Drawing.Point(172, 75);
+            this.txtParkingNumber.Location = new System.Drawing.Point(389, 155);
             this.txtParkingNumber.Name = "txtParkingNumber";
             this.txtParkingNumber.Size = new System.Drawing.Size(100, 20);
             this.txtParkingNumber.TabIndex = 2;
@@ -81,7 +82,7 @@
             this.lblPkgMainAddr.AutoSize = true;
             this.lblPkgMainAddr.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPkgMainAddr.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblPkgMainAddr.Location = new System.Drawing.Point(74, 195);
+            this.lblPkgMainAddr.Location = new System.Drawing.Point(79, 195);
             this.lblPkgMainAddr.Name = "lblPkgMainAddr";
             this.lblPkgMainAddr.Size = new System.Drawing.Size(261, 24);
             this.lblPkgMainAddr.TabIndex = 5;
@@ -89,7 +90,7 @@
             // 
             // txtParkingAddr1
             // 
-            this.txtParkingAddr1.Location = new System.Drawing.Point(172, 124);
+            this.txtParkingAddr1.Location = new System.Drawing.Point(389, 195);
             this.txtParkingAddr1.Name = "txtParkingAddr1";
             this.txtParkingAddr1.Size = new System.Drawing.Size(100, 20);
             this.txtParkingAddr1.TabIndex = 4;
@@ -99,7 +100,7 @@
             this.lblPkgAddtnlAddr.AutoSize = true;
             this.lblPkgAddtnlAddr.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPkgAddtnlAddr.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblPkgAddtnlAddr.Location = new System.Drawing.Point(74, 235);
+            this.lblPkgAddtnlAddr.Location = new System.Drawing.Point(79, 235);
             this.lblPkgAddtnlAddr.Name = "lblPkgAddtnlAddr";
             this.lblPkgAddtnlAddr.Size = new System.Drawing.Size(205, 24);
             this.lblPkgAddtnlAddr.TabIndex = 7;
@@ -107,7 +108,7 @@
             // 
             // txtParkingAddr2
             // 
-            this.txtParkingAddr2.Location = new System.Drawing.Point(172, 170);
+            this.txtParkingAddr2.Location = new System.Drawing.Point(389, 235);
             this.txtParkingAddr2.Name = "txtParkingAddr2";
             this.txtParkingAddr2.Size = new System.Drawing.Size(100, 20);
             this.txtParkingAddr2.TabIndex = 6;
@@ -117,7 +118,7 @@
             this.lblPkgAddressNmbr.AutoSize = true;
             this.lblPkgAddressNmbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPkgAddressNmbr.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblPkgAddressNmbr.Location = new System.Drawing.Point(74, 275);
+            this.lblPkgAddressNmbr.Location = new System.Drawing.Point(79, 275);
             this.lblPkgAddressNmbr.Name = "lblPkgAddressNmbr";
             this.lblPkgAddressNmbr.Size = new System.Drawing.Size(211, 24);
             this.lblPkgAddressNmbr.TabIndex = 9;
@@ -125,10 +126,21 @@
             // 
             // txtStreetNumber
             // 
-            this.txtStreetNumber.Location = new System.Drawing.Point(172, 208);
+            this.txtStreetNumber.Location = new System.Drawing.Point(389, 275);
             this.txtStreetNumber.Name = "txtStreetNumber";
             this.txtStreetNumber.Size = new System.Drawing.Size(100, 20);
             this.txtStreetNumber.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(68, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(389, 55);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Nouveau parking";
             // 
             // frmCreateParking
             // 
@@ -136,6 +148,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(1284, 611);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblPkgAddressNmbr);
             this.Controls.Add(this.txtStreetNumber);
             this.Controls.Add(this.lblPkgAddtnlAddr);
@@ -165,5 +178,6 @@
         private System.Windows.Forms.TextBox txtParkingAddr2;
         private System.Windows.Forms.Label lblPkgAddressNmbr;
         private System.Windows.Forms.TextBox txtStreetNumber;
+        private System.Windows.Forms.Label label1;
     }
 }
