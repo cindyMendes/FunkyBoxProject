@@ -51,6 +51,16 @@ namespace FunkyBox
         {
         } // end afficherToolStripMenuItem1_Click
 
+        private void ajouterToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmCreateGarage frmCG = new frmCreateGarage();
+            initForm(frmCG);
+        }
 
+        private void afficherToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmDisplayGarages frmDG = new frmDisplayGarages();
+            initForm(frmDG);
+        }
     } // end class
 } // end namespace

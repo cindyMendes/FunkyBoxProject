@@ -32,8 +32,7 @@ namespace FunkyBox
             
             foreach (Garage newGarage in sdGarages)
             {
-                DataRow dr;
-                dr = displayGarages.NewRow();
+                DataRow dr = displayGarages.NewRow();
                 dr[0] = newGarage.GarageId;
                 dr[1] = newGarage.ParkingName;
                 dr[2] = newGarage.MonthlyRent;
@@ -47,11 +46,15 @@ namespace FunkyBox
         }
         private void btnAddGarage_Click(object sender, EventArgs e)
         {
+            this.Close(); 
             displayGarages.Clear();
-            this.Hide(); 
             frmCreateGarage frmCG = new frmCreateGarage();
             frmCG.ShowDialog();
-            
+        }
+
+        private void btnReturnHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
