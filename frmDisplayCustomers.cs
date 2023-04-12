@@ -43,10 +43,9 @@ namespace FunkyBox
 
         private void afficheCustomers()
         {
-            this.grdCustomers.DataSource = Parking.ListCustomer();
+            this.grdCustomers.DataSource = Parking.ListCustomerParking();
             this.grdCustomers.Refresh();
         } // end afficheCustomers
-
 
 
     } // end class
