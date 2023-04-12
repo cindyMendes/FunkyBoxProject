@@ -12,22 +12,14 @@ namespace FunkyBox
 {
     public partial class frmCreateGarage : Form
     {
-        DataTable displayGarages;
         public frmCreateGarage()
         {
             InitializeComponent();
         }
         public void AddGarage()
         {
-            DataRow dr;
-            dr = displayGarages.NewRow();
-            dr[0] = textGarageNb.Text;
-            dr[1] = txtParkingName.Text;
-            dr[2] = txtMonthlyRent.Text;
-            dr[3] = txtMonthlyFees.Text;
-            dr[4] = txtTenantName.Text;
-            dr[5] = txtStartRent.Text;
-            displayGarages.Rows.Add(dr);
+            Garage newGarage = new Garage(txtGarageNb.Text, txtParkingName.Text, Double.Parse(txtMonthlyRent.Text), Double.Parse(txtMonthlyFees.Text), txtTenantName.Text, DateTime.Parse(txtStartRent.Text));
+            frmDisplayGarages.sdGarages.Add(newGarage);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -40,8 +32,8 @@ namespace FunkyBox
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            this.Hide();
             AddGarage();
+            this.Hide();
             frmDisplayGarages frmDG = new frmDisplayGarages();
             frmDG.ShowDialog();
             this.Close();
