@@ -14,6 +14,11 @@ namespace FunkyBox
 {
     public partial class frmCreateCustomer : Form
     {
+
+        frmDisplayCustomers displayCustomerForm = new frmDisplayCustomers();
+        DataGridView dt = new DataGridView();
+
+
         public frmCreateCustomer()
         {
             InitializeComponent();
@@ -37,6 +42,19 @@ namespace FunkyBox
             //MessageBox.Show(threeCustomer.ToString());
             //MessageBox.Show(fourCustomer.ToString());
 
+            Customer c = new Customer(txtFirstname.Text, txtLastname.Text, txtStreetNumber.Text, txtStreetType.Text, txtStreetName.Text, txtPostalCode.Text, txtCity.Text, txtAddVehicle.Text) ;
+
+            c.Ajouter(c);
+            MessageBox.Show(c.AllCustomersDict.Values.Count.ToString()) ;
+            
+            dt.Location = new Point(100, 150);
+            dt.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dt.Size = new Size(800, 200);
+            //dt.DataSource = c.ListCustomer(); 
+
+            displayCustomerForm.Controls.Add(dt);
+            displayCustomerForm.Show();
+            this.Close();
 
         } // end btnSave_Click
 

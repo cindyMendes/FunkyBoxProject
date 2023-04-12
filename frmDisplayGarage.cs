@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace FunkyBox
 {
-    internal partial class frmDisplayGarages : Form
+    public partial class frmDisplayGarage : Form
     {
         //DataTable displayGarages;
 
@@ -38,11 +38,9 @@ namespace FunkyBox
         //    displayGarages.Rows.Add(dr);
         //}
 
-        private void btnAddGarage_Click(object sender, EventArgs e)
+        public frmDisplayGarage()
         {
-            this.Hide(); 
-            frmCreateGarage frmCG = new frmCreateGarage();
-            frmCG.ShowDialog();
+            InitializeComponent();
         }
     }
 }
