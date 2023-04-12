@@ -16,7 +16,7 @@ namespace FunkyBox
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDisplayGarages());
+            Application.Run(new frmDisplayCustomers());
         }
     }
 }
