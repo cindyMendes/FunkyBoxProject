@@ -31,6 +31,7 @@
             this.dgvDisplayGarages = new System.Windows.Forms.DataGridView();
             this.btnAddGarage = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.btnReturnHome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisplayGarages)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,11 +68,26 @@
             this.lblTitle.TabIndex = 18;
             this.lblTitle.Text = "Box existants";
             // 
+            // btnReturnHome
+            // 
+            this.btnReturnHome.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnReturnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturnHome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReturnHome.Location = new System.Drawing.Point(557, 425);
+            this.btnReturnHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReturnHome.Name = "btnReturnHome";
+            this.btnReturnHome.Size = new System.Drawing.Size(143, 42);
+            this.btnReturnHome.TabIndex = 19;
+            this.btnReturnHome.Text = "Retour accueil";
+            this.btnReturnHome.UseVisualStyleBackColor = false;
+            this.btnReturnHome.Click += new System.EventHandler(this.btnReturnHome_Click);
+            // 
             // frmDisplayGarages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.btnReturnHome);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnAddGarage);
             this.Controls.Add(this.dgvDisplayGarages);
@@ -88,5 +104,6 @@
         private System.Windows.Forms.DataGridView dgvDisplayGarages;
         private System.Windows.Forms.Button btnAddGarage;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Button btnReturnHome;
     }
 }

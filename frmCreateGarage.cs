@@ -24,19 +24,17 @@ namespace FunkyBox
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             frmDisplayGarages frmDG = new frmDisplayGarages();
             frmDG.ShowDialog();
-            this.Close();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             AddGarage();
-            this.Hide();
+            this.Close();
             frmDisplayGarages frmDG = new frmDisplayGarages();
             frmDG.ShowDialog();
-            this.Close();
         }
     }
 }
