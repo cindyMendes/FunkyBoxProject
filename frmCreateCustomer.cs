@@ -16,7 +16,7 @@ namespace FunkyBox
     {
 
         frmDisplayCustomers displayCustomerForm = new frmDisplayCustomers();
-        DataGridView dt = new DataGridView();
+        //DataGridView dt = frmDisplayCustomers.dt;
 
 
         public frmCreateCustomer()
@@ -42,19 +42,19 @@ namespace FunkyBox
             //MessageBox.Show(threeCustomer.ToString());
             //MessageBox.Show(fourCustomer.ToString());
 
-            Customer c = new Customer(txtFirstname.Text, txtLastname.Text, txtStreetNumber.Text, txtStreetType.Text, txtStreetName.Text, txtPostalCode.Text, txtCity.Text, txtAddVehicle.Text) ;
+            //Customer c = new Customer(txtFirstname.Text, txtLastname.Text, txtStreetNumber.Text, txtStreetType.Text, txtStreetName.Text, txtPostalCode.Text, txtCity.Text, txtAddVehicle.Text) ;
 
-            c.Ajouter(c);
-            MessageBox.Show(c.AllCustomersDict.Values.Count.ToString()) ;
+            //c.Ajouter(c);
+            //MessageBox.Show(c.AllCustomersDict.Values.Count.ToString()) ;
             
-            dt.Location = new Point(100, 150);
-            dt.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dt.Size = new Size(800, 200);
-            //dt.DataSource = c.ListCustomer(); 
+            //dt.Location = new Point(100, 150);
+            //dt.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            //dt.Size = new Size(500, 200);
+            ////dt.DataSource = c.ListCustomer(); 
 
-            displayCustomerForm.Controls.Add(dt);
-            displayCustomerForm.Show();
-            this.Close();
+            //displayCustomerForm.Controls.Add(dt);
+            //displayCustomerForm.Show();
+            
 
         } // end btnSave_Click
 

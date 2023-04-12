@@ -39,7 +39,6 @@
             this.lblPostalCode = new System.Windows.Forms.Label();
             this.lblCity = new System.Windows.Forms.Label();
             this.lblLicence = new System.Windows.Forms.Label();
-            this.grdCustomers = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -49,6 +48,7 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.lblFirstName = new System.Windows.Forms.Label();
+            this.grdCustomers = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.grdCustomers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -175,16 +175,6 @@
             this.lblLicence.TabIndex = 44;
             this.lblLicence.Text = "Immatricualtion";
             // 
-            // grdCustomers
-            // 
-            this.grdCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.grdCustomers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(26)))), ((int)(((byte)(30)))));
-            this.grdCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdCustomers.Location = new System.Drawing.Point(47, 264);
-            this.grdCustomers.Name = "grdCustomers";
-            this.grdCustomers.Size = new System.Drawing.Size(885, 181);
-            this.grdCustomers.TabIndex = 45;
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(172, 90);
@@ -252,6 +242,16 @@
             this.lblFirstName.TabIndex = 54;
             this.lblFirstName.Text = "Prénom";
             // 
+            // grdCustomers
+            // 
+            this.grdCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdCustomers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(26)))), ((int)(((byte)(30)))));
+            this.grdCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdCustomers.Location = new System.Drawing.Point(47, 264);
+            this.grdCustomers.Name = "grdCustomers";
+            this.grdCustomers.Size = new System.Drawing.Size(885, 181);
+            this.grdCustomers.TabIndex = 45;
+            // 
             // frmDisplayCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -299,7 +299,6 @@
         private System.Windows.Forms.Label lblPostalCode;
         private System.Windows.Forms.Label lblCity;
         private System.Windows.Forms.Label lblLicence;
-        private System.Windows.Forms.DataGridView grdCustomers;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
@@ -309,5 +308,6 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label lblFirstName;
+        private System.Windows.Forms.DataGridView grdCustomers;
     }
 }

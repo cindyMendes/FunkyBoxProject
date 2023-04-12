@@ -14,8 +14,6 @@ namespace FunkyBox
 {
     public partial class frmDisplayCustomers : Form
     {
-
-        //private Parking Parking;
         DataTable newCustomer = new DataTable();
 
         public frmDisplayCustomers()
@@ -30,7 +28,9 @@ namespace FunkyBox
             newCustomer.Columns.Add(new DataColumn("Ville", typeof(System.String)));
             newCustomer.Columns.Add(new DataColumn("Plaque d'immatriculation", typeof(System.String)));
             grdCustomers.DataSource = newCustomer;
+
         }
+
         public void AddCustomer()
         {
             DataRow nc;
@@ -45,6 +45,7 @@ namespace FunkyBox
             nc[7] = textBox8.Text;
             newCustomer.Rows.Add(nc);
         }
+
         public void btnValid_Click(object sender, EventArgs e)
         {
             AddCustomer();
@@ -54,33 +55,7 @@ namespace FunkyBox
         {
             this.Close();
         }
-
-
-
-        /*// hard coded customers
-        Customer oneCustomer = new Customer("Laurent", "Campan", 44, "Rue", "Hérold", "06000", "Nice", "QW-234-VF");
-        Customer twoCustomer = new Customer("Nicolas", "Raoux", 170, "Rue", "Henri Martin", "06330", "Roquefort-Les-Pins", "XC-653-LK");
-        Customer threeCustomer = new Customer("Cindy", "Mendes", 1, "Chemin", "des Lavandins", "06800", "Cagnes-Sur-Mer", "DY-104-MG");
-        Customer fourCustomer = new Customer("Qaïs", "Hamadou", 29, "Avenue", "Jean Médecin", "06000", "Nice", "PO-921-NA");
-
-
-        //this.Parking = new Parking("TEST", "Test Class POS");
-        this.Parking = new Parking();
-
-        this.Parking.Ajouter(oneCustomer);
-        this.Parking.Ajouter(twoCustomer);
-        this.Parking.Ajouter(threeCustomer);
-        this.Parking.Ajouter(fourCustomer);
-
-        this.afficheCustomers();
-
-
-    } // end frmDisplayCustomers
-
-    public void afficheCustomers()
-    {
-        this.grdCustomers.DataSource = Parking.ListCustomer();
-        this.grdCustomers.Refresh();
-    } // end afficheCustomers   */
+        
+    
     } // end class
 } // end namespace

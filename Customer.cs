@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FunkyBox
 {
-    internal class Customer
+    public class Customer
     {
         /// <summary>
         /// Prénom du client
@@ -108,44 +108,6 @@ namespace FunkyBox
             set { city = value; }
         }
 
-        ///// <summary>
-        ///// La liste des plaques d'immatriculation
-        ///// </summary>
-        //private List<string> licencePlate;
-
-        ///// <summary>
-        ///// Obtient et définit la liste des plaques d'immatriculation
-        ///// </summary>
-        //public List<string> LicencePlate
-        //{
-        //    get { return licencePlate; }
-        //    set { licencePlate = value; }
-        //}
-
-
-        /// <summary>
-        /// constructeur d'initialisation
-        /// </summary>
-        /// <param name="FN"></param>
-        /// <param name="LN"></param>
-        /// <param name="SNb"></param>
-        /// <param name="ST"></param>
-        /// <param name="SNa"></param>
-        /// <param name="PC"></param>
-        /// <param name="Ct"></param>
-        //public Customer(string FN, string LN, int SNb, string ST, string SNa, string PC, string Ct, List<string> LP)
-        //{
-        //    this.FirstName = FN;
-        //    this.LastName = LN;
-        //    this.StreetNumber = SNb;
-        //    this.StreetType = ST;
-        //    this.StreetName = SNa;
-        //    this.PostalCode = PC;
-        //    this.City = Ct;
-        //    this.LicencePlate = LP;
-        //}
-
-
         private string licencePlate;
 
         public string LicencePlate
@@ -153,35 +115,6 @@ namespace FunkyBox
             get { return licencePlate; }
             set { licencePlate = value; }
         }
-
-        //public Customer(string FN, string LN, int SNb, string ST, string SNa, string PC, string Ct, string LP)
-        //{
-        //    this.FirstName = FN;
-        //    this.LastName = LN;
-        //    this.StreetNumber = SNb;
-        //    this.StreetType = ST;
-        //    this.StreetName = SNa;
-        //    this.PostalCode = PC;
-        //    this.City = Ct;
-        //    this.LicencePlate = LP;
-        //}
-
-        private DataTable newCustomer;
-
-        private SortedDictionary<String, Customer> allCustomersDict;
-
-        public SortedDictionary<String, Customer> AllCustomersDict
-        {
-            get { return allCustomersDict; }
-            set { allCustomersDict = value; }
-        }
-
-
-        public void Ajouter(Customer unCustomer)
-        {
-            this.allCustomersDict.Add(unCustomer.LicencePlate, unCustomer);
-        }
-
 
         public Customer(string FN, string LN, string SNb, string ST, string SNa, string PC, string Ct, string LP)
         {
@@ -193,18 +126,7 @@ namespace FunkyBox
             this.PostalCode = PC;
             this.City = Ct;
             this.LicencePlate = LP;
-
-            allCustomersDict  = new SortedDictionary<string, Customer>();
-            newCustomer = new DataTable();
-
-            this.newCustomer.Columns.Add(new DataColumn("Nom", typeof(System.String)));
-            this.newCustomer.Columns.Add(new DataColumn("Prénom", typeof(System.String)));
-            this.newCustomer.Columns.Add(new DataColumn("Numéro de rue", typeof(System.String)));
-            this.newCustomer.Columns.Add(new DataColumn("Type de voie", typeof(System.String)));
-            this.newCustomer.Columns.Add(new DataColumn("Adresse", typeof(System.String)));
-            this.newCustomer.Columns.Add(new DataColumn("Code postal", typeof(System.String)));
-            this.newCustomer.Columns.Add(new DataColumn("Ville", typeof(System.String)));
-            this.newCustomer.Columns.Add(new DataColumn("Plaque d'immatriculation", typeof(System.String)));
         }
+
     } //endclass
 }//endnamespace
