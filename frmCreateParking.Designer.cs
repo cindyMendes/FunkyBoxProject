@@ -180,6 +180,43 @@
             this.btnParkingDisplay.UseVisualStyleBackColor = true;
             this.btnParkingDisplay.Click += new System.EventHandler(this.btnParkingDisplay_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(68, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(708, 55);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Création d\'un nouveau parking";
+            // 
+            // btnPkgCreateCnfrm
+            // 
+            this.btnPkgCreateCnfrm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnPkgCreateCnfrm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPkgCreateCnfrm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPkgCreateCnfrm.ForeColor = System.Drawing.Color.Black;
+            this.btnPkgCreateCnfrm.Location = new System.Drawing.Point(528, 320);
+            this.btnPkgCreateCnfrm.Name = "btnPkgCreateCnfrm";
+            this.btnPkgCreateCnfrm.Size = new System.Drawing.Size(122, 34);
+            this.btnPkgCreateCnfrm.TabIndex = 11;
+            this.btnPkgCreateCnfrm.Text = "Créer";
+            this.btnPkgCreateCnfrm.UseVisualStyleBackColor = false;
+            // 
+            // btnPkgCreateCncl
+            // 
+            this.btnPkgCreateCncl.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnPkgCreateCncl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPkgCreateCncl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPkgCreateCncl.ForeColor = System.Drawing.Color.Black;
+            this.btnPkgCreateCncl.Location = new System.Drawing.Point(366, 320);
+            this.btnPkgCreateCncl.Name = "btnPkgCreateCncl";
+            this.btnPkgCreateCncl.Size = new System.Drawing.Size(122, 34);
+            this.btnPkgCreateCncl.TabIndex = 12;
+            this.btnPkgCreateCncl.Text = "Annuler";
+            this.btnPkgCreateCncl.UseVisualStyleBackColor = false;
+            // 
             // frmCreateParking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
