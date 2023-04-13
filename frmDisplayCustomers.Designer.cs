@@ -55,9 +55,9 @@
             // btnValid
             // 
             this.btnValid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnValid.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValid.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValid.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnValid.Location = new System.Drawing.Point(172, 473);
+            this.btnValid.Location = new System.Drawing.Point(595, 473);
             this.btnValid.Name = "btnValid";
             this.btnValid.Size = new System.Drawing.Size(129, 53);
             this.btnValid.TabIndex = 35;
@@ -68,9 +68,9 @@
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(522, 473);
+            this.btnCancel.Location = new System.Drawing.Point(755, 473);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(129, 53);
             this.btnCancel.TabIndex = 36;
@@ -250,7 +250,7 @@
             this.grdCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdCustomers.Location = new System.Drawing.Point(47, 264);
             this.grdCustomers.Name = "grdCustomers";
-            this.grdCustomers.Size = new System.Drawing.Size(885, 181);
+            this.grdCustomers.Size = new System.Drawing.Size(837, 192);
             this.grdCustomers.TabIndex = 45;
             // 
             // frmDisplayCustomers

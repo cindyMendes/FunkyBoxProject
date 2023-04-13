@@ -47,8 +47,6 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblVehicle = new System.Windows.Forms.Label();
             this.txtAddVehicle = new System.Windows.Forms.TextBox();
-            this.picAdd = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picAdd)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
@@ -186,12 +184,12 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(254, 437);
+            this.btnSave.Location = new System.Drawing.Point(254, 473);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(120, 36);
+            this.btnSave.Size = new System.Drawing.Size(129, 53);
             this.btnSave.TabIndex = 14;
             this.btnSave.Text = "Valider";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -199,12 +197,12 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(418, 437);
+            this.btnCancel.Location = new System.Drawing.Point(418, 473);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(120, 36);
+            this.btnCancel.Size = new System.Drawing.Size(129, 53);
             this.btnCancel.TabIndex = 15;
             this.btnCancel.Text = "Annuler";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -226,7 +224,7 @@
             this.lblVehicle.AutoSize = true;
             this.lblVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVehicle.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblVehicle.Location = new System.Drawing.Point(571, 115);
+            this.lblVehicle.Location = new System.Drawing.Point(74, 395);
             this.lblVehicle.Name = "lblVehicle";
             this.lblVehicle.Size = new System.Drawing.Size(85, 24);
             this.lblVehicle.TabIndex = 17;
@@ -235,21 +233,10 @@
             // txtAddVehicle
             // 
             this.txtAddVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddVehicle.Location = new System.Drawing.Point(686, 115);
+            this.txtAddVehicle.Location = new System.Drawing.Point(254, 395);
             this.txtAddVehicle.Name = "txtAddVehicle";
-            this.txtAddVehicle.Size = new System.Drawing.Size(131, 26);
+            this.txtAddVehicle.Size = new System.Drawing.Size(284, 26);
             this.txtAddVehicle.TabIndex = 19;
-            // 
-            // picAdd
-            // 
-            this.picAdd.Image = global::FunkyBox.Properties.Resources.plus1;
-            this.picAdd.Location = new System.Drawing.Point(876, 115);
-            this.picAdd.Name = "picAdd";
-            this.picAdd.Size = new System.Drawing.Size(26, 26);
-            this.picAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAdd.TabIndex = 20;
-            this.picAdd.TabStop = false;
-            this.picAdd.Click += new System.EventHandler(this.picAdd_Click);
             // 
             // frmCreateCustomer
             // 
@@ -257,7 +244,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Controls.Add(this.picAdd);
             this.Controls.Add(this.txtAddVehicle);
             this.Controls.Add(this.lblVehicle);
             this.Controls.Add(this.lblTitle);
@@ -279,7 +265,6 @@
             this.Controls.Add(this.lblName);
             this.Name = "frmCreateCustomer";
             this.Text = "Création d\'un client";
-            ((System.ComponentModel.ISupportInitialize)(this.picAdd)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,7 +291,6 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblVehicle;
         private System.Windows.Forms.TextBox txtAddVehicle;
-        private System.Windows.Forms.PictureBox picAdd;
     }
 }
 
