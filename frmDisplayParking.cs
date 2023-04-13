@@ -12,13 +12,11 @@ namespace FunkyBox
 {
     public partial class frmDisplayParking : Form
     {
-        //DataTable displayParking = new DataTable();
-       public static DataGridView displayView = new DataGridView();
+        public static DataGridView displayView;
+
         public frmDisplayParking()
         {
             InitializeComponent();
-            //displayParking.Columns.Add(new DataColumn("Nom du parking", typeof(System.String)));
-            //dgvParking.DataSource = displayParking;
         }
     }
 }

@@ -260,5 +260,7 @@
         private System.Windows.Forms.Button btnParkingConfirm;
         private System.Windows.Forms.Button btnParkingCancel;
         private System.Windows.Forms.Button btnParkingDisplay;
+        private System.Windows.Forms.Button btnPkgCreateCnfrm;
+        private System.Windows.Forms.Button btnPkgCreateCncl;
     }
 }
