@@ -94,7 +94,7 @@ namespace FunkyBox
         private void textBox2_MouseHover(object sender, EventArgs e)
         {
             lbl5.Text = "Saisir mot de passe";
-            lbl5.Location = new Point(282,114);
+            lbl5.Location = new Point(160, 160);
             this.Controls.Add(lbl5);
             
         }
@@ -107,7 +107,7 @@ namespace FunkyBox
         private void textBox1_MouseHover(object sender, EventArgs e)
         {
             lbl6.Text = "Saisir le login";
-            lbl6.Location = new Point(282,55);
+            lbl6.Location = new Point(160, 100);
             this.Controls.Add(lbl6);
         }
 

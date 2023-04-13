@@ -118,7 +118,7 @@
             // txtLastname
             // 
             this.txtLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastname.Location = new System.Drawing.Point(254, 155);
+            this.txtLastname.Location = new System.Drawing.Point(300, 155);
             this.txtLastname.Name = "txtLastname";
             this.txtLastname.Size = new System.Drawing.Size(284, 26);
             this.txtLastname.TabIndex = 2;
@@ -137,7 +137,7 @@
             // txtFirstname
             // 
             this.txtFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstname.Location = new System.Drawing.Point(254, 115);
+            this.txtFirstname.Location = new System.Drawing.Point(300, 115);
             this.txtFirstname.Name = "txtFirstname";
             this.txtFirstname.Size = new System.Drawing.Size(284, 26);
             this.txtFirstname.TabIndex = 1;
@@ -145,7 +145,7 @@
             // txtStreetNumber
             // 
             this.txtStreetNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStreetNumber.Location = new System.Drawing.Point(254, 195);
+            this.txtStreetNumber.Location = new System.Drawing.Point(300, 195);
             this.txtStreetNumber.Name = "txtStreetNumber";
             this.txtStreetNumber.Size = new System.Drawing.Size(84, 26);
             this.txtStreetNumber.TabIndex = 3;
@@ -153,7 +153,7 @@
             // txtStreetType
             // 
             this.txtStreetType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStreetType.Location = new System.Drawing.Point(254, 235);
+            this.txtStreetType.Location = new System.Drawing.Point(300, 235);
             this.txtStreetType.Name = "txtStreetType";
             this.txtStreetType.Size = new System.Drawing.Size(284, 26);
             this.txtStreetType.TabIndex = 4;
@@ -161,7 +161,7 @@
             // txtStreetName
             // 
             this.txtStreetName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStreetName.Location = new System.Drawing.Point(254, 275);
+            this.txtStreetName.Location = new System.Drawing.Point(300, 275);
             this.txtStreetName.Name = "txtStreetName";
             this.txtStreetName.Size = new System.Drawing.Size(284, 26);
             this.txtStreetName.TabIndex = 5;
@@ -169,7 +169,7 @@
             // txtPostalCode
             // 
             this.txtPostalCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPostalCode.Location = new System.Drawing.Point(254, 315);
+            this.txtPostalCode.Location = new System.Drawing.Point(300, 315);
             this.txtPostalCode.Name = "txtPostalCode";
             this.txtPostalCode.Size = new System.Drawing.Size(84, 26);
             this.txtPostalCode.TabIndex = 6;
@@ -177,7 +177,7 @@
             // txtCity
             // 
             this.txtCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCity.Location = new System.Drawing.Point(254, 355);
+            this.txtCity.Location = new System.Drawing.Point(300, 355);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(284, 26);
             this.txtCity.TabIndex = 7;
@@ -187,7 +187,7 @@
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(618, 447);
+            this.btnSave.Location = new System.Drawing.Point(455, 447);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(129, 53);
             this.btnSave.TabIndex = 9;
@@ -200,7 +200,7 @@
             this.btnCancel.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(786, 447);
+            this.btnCancel.Location = new System.Drawing.Point(300, 447);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(129, 53);
             this.btnCancel.TabIndex = 10;
@@ -233,7 +233,7 @@
             // txtAddVehicle
             // 
             this.txtAddVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddVehicle.Location = new System.Drawing.Point(254, 395);
+            this.txtAddVehicle.Location = new System.Drawing.Point(300, 395);
             this.txtAddVehicle.Name = "txtAddVehicle";
             this.txtAddVehicle.Size = new System.Drawing.Size(284, 26);
             this.txtAddVehicle.TabIndex = 8;
