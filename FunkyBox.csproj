@@ -46,17 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmDisplayParking.cs">
+    <Compile Include="frmDisplayGarages.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDisplayParking.Designer.cs">
-      <DependentUpon>frmDisplayParking.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmDisplayGarage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDisplayGarage.Designer.cs">
-      <DependentUpon>frmDisplayGarage.cs</DependentUpon>
+    <Compile Include="frmDisplayGarages.Designer.cs">
+      <DependentUpon>frmDisplayGarages.cs</DependentUpon>
     </Compile>
     <Compile Include="frmHome.cs">
       <SubType>Form</SubType>
@@ -105,14 +99,17 @@
     <EmbeddedResource Include="frmCreateCustomer.resx">
       <DependentUpon>frmCreateCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateGarage.resx">
+      <DependentUpon>frmCreateGarage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCreateParking.resx">
       <DependentUpon>frmCreateParking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDisplayCustomers.resx">
       <DependentUpon>frmDisplayCustomers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDisplayGarage.resx">
-      <DependentUpon>frmDisplayGarage.cs</DependentUpon>
+    <EmbeddedResource Include="frmDisplayGarages.resx">
+      <DependentUpon>frmDisplayGarages.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
@@ -154,6 +151,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\240_F_462636502_9cDAYuyVvBY4qYJlHjW7vqar5HYS8h8x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14862026-creation-de-logo-fb-initiale-fb-lettre-logo-design-monogramme-vector-design-pro-vecteur-vectoriel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oiopiop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sans titre.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

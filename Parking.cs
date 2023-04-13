@@ -1,4 +1,4 @@
-﻿using System;
+﻿   using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -26,22 +26,22 @@ namespace FunkyBox
             set { name = value; }
         }
 
-        private DataTable dtCustomers;
+        private DataTable dtCustomersParking;
 
-        private SortedDictionary<String, Customer> allCustomers;
+        private SortedDictionary<String, Customer> dictCustomersParking;
 
         public void Ajouter(Customer unCustomer)
         {
-            this.allCustomers.Add(unCustomer.LicencePlate, unCustomer);
+            this.dictCustomersParking.Add(unCustomer.LicencePlate, unCustomer);
         }
 
-        public DataTable ListCustomer()
+        public DataTable ListCustomerParking()
         {
-            this.dtCustomers.Clear();
-            foreach (Customer c in this.allCustomers.Values)
+            this.dtCustomersParking.Clear();
+            foreach (Customer c in this.dictCustomersParking.Values)
             {
                 DataRow dr;   
-                dr = this.dtCustomers.NewRow();
+                dr = this.dtCustomersParking.NewRow();
                 dr[0] = c.FirstName;
                 dr[1] = c.LastName;
                 dr[2] = c.StreetNumber;
@@ -51,10 +51,10 @@ namespace FunkyBox
                 dr[6] = c.City;
                 dr[7] = c.LicencePlate;
 
-                this.dtCustomers.Rows.Add(dr);
+                this.dtCustomersParking.Rows.Add(dr);  
             }
 
-            return this.dtCustomers;
+            return this.dtCustomersParking;
         }
 
 
@@ -63,17 +63,17 @@ namespace FunkyBox
             //this.code = code;
             //this.name = name;
  
-            allCustomers = new SortedDictionary<string, Customer>();
-            dtCustomers = new DataTable();
+            dictCustomersParking = new SortedDictionary<string, Customer>();
+            dtCustomersParking = new DataTable();
 
-            this.dtCustomers.Columns.Add(new DataColumn("Prenom", typeof(System.String)));
-            this.dtCustomers.Columns.Add(new DataColumn("Nom", typeof(System.String)));
-            this.dtCustomers.Columns.Add(new DataColumn("Numero", typeof(System.Int32)));
-            this.dtCustomers.Columns.Add(new DataColumn("Type", typeof(System.String)));
-            this.dtCustomers.Columns.Add(new DataColumn("Rue", typeof(System.String)));
-            this.dtCustomers.Columns.Add(new DataColumn("CP", typeof(System.String)));
-            this.dtCustomers.Columns.Add(new DataColumn("Ville", typeof(System.String)));
-            this.dtCustomers.Columns.Add(new DataColumn("Immatriculation", typeof(System.String)));
+            this.dtCustomersParking.Columns.Add(new DataColumn("Prenom", typeof(System.String)));
+            this.dtCustomersParking.Columns.Add(new DataColumn("Nom", typeof(System.String)));
+            this.dtCustomersParking.Columns.Add(new DataColumn("Numero", typeof(System.Int32)));
+            this.dtCustomersParking.Columns.Add(new DataColumn("Type", typeof(System.String)));
+            this.dtCustomersParking.Columns.Add(new DataColumn("Rue", typeof(System.String)));
+            this.dtCustomersParking.Columns.Add(new DataColumn("CP", typeof(System.String)));
+            this.dtCustomersParking.Columns.Add(new DataColumn("Ville", typeof(System.String)));
+            this.dtCustomersParking.Columns.Add(new DataColumn("Immatriculation", typeof(System.String)));
         }
 
 

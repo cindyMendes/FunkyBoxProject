@@ -47,14 +47,13 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblVehicle = new System.Windows.Forms.Label();
             this.txtAddVehicle = new System.Windows.Forms.TextBox();
-            this.picAdd = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picAdd)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblName.Location = new System.Drawing.Point(74, 155);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(51, 24);
@@ -65,6 +64,7 @@
             // 
             this.lblStreetNumber.AutoSize = true;
             this.lblStreetNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStreetNumber.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblStreetNumber.Location = new System.Drawing.Point(74, 195);
             this.lblStreetNumber.Name = "lblStreetNumber";
             this.lblStreetNumber.Size = new System.Drawing.Size(30, 24);
@@ -75,6 +75,7 @@
             // 
             this.lblStreetType.AutoSize = true;
             this.lblStreetType.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStreetType.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblStreetType.Location = new System.Drawing.Point(74, 235);
             this.lblStreetType.Name = "lblStreetType";
             this.lblStreetType.Size = new System.Drawing.Size(120, 24);
@@ -85,6 +86,7 @@
             // 
             this.lblStreetName.AutoSize = true;
             this.lblStreetName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStreetName.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblStreetName.Location = new System.Drawing.Point(74, 275);
             this.lblStreetName.Name = "lblStreetName";
             this.lblStreetName.Size = new System.Drawing.Size(118, 24);
@@ -95,6 +97,7 @@
             // 
             this.lblPostalCode.AutoSize = true;
             this.lblPostalCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPostalCode.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblPostalCode.Location = new System.Drawing.Point(74, 315);
             this.lblPostalCode.Name = "lblPostalCode";
             this.lblPostalCode.Size = new System.Drawing.Size(35, 24);
@@ -105,6 +108,7 @@
             // 
             this.lblCity.AutoSize = true;
             this.lblCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCity.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblCity.Location = new System.Drawing.Point(74, 355);
             this.lblCity.Name = "lblCity";
             this.lblCity.Size = new System.Drawing.Size(46, 24);
@@ -123,6 +127,7 @@
             // 
             this.lblFirstname.AutoSize = true;
             this.lblFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstname.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblFirstname.Location = new System.Drawing.Point(74, 115);
             this.lblFirstname.Name = "lblFirstname";
             this.lblFirstname.Size = new System.Drawing.Size(77, 24);
@@ -179,32 +184,35 @@
             // 
             // btnSave
             // 
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.LimeGreen;
-            this.btnSave.Location = new System.Drawing.Point(418, 437);
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(254, 473);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(120, 36);
+            this.btnSave.Size = new System.Drawing.Size(129, 53);
             this.btnSave.TabIndex = 14;
             this.btnSave.Text = "Valider";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.Red;
-            this.btnCancel.Location = new System.Drawing.Point(254, 437);
+            this.btnCancel.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.Black;
+            this.btnCancel.Location = new System.Drawing.Point(418, 473);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(120, 36);
+            this.btnCancel.Size = new System.Drawing.Size(129, 53);
             this.btnCancel.TabIndex = 15;
             this.btnCancel.Text = "Annuler";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblTitle.Location = new System.Drawing.Point(68, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(342, 55);
@@ -215,7 +223,8 @@
             // 
             this.lblVehicle.AutoSize = true;
             this.lblVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVehicle.Location = new System.Drawing.Point(571, 115);
+            this.lblVehicle.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lblVehicle.Location = new System.Drawing.Point(74, 395);
             this.lblVehicle.Name = "lblVehicle";
             this.lblVehicle.Size = new System.Drawing.Size(85, 24);
             this.lblVehicle.TabIndex = 17;
@@ -224,28 +233,17 @@
             // txtAddVehicle
             // 
             this.txtAddVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddVehicle.Location = new System.Drawing.Point(683, 115);
+            this.txtAddVehicle.Location = new System.Drawing.Point(254, 395);
             this.txtAddVehicle.Name = "txtAddVehicle";
-            this.txtAddVehicle.Size = new System.Drawing.Size(131, 26);
+            this.txtAddVehicle.Size = new System.Drawing.Size(284, 26);
             this.txtAddVehicle.TabIndex = 19;
-            // 
-            // picAdd
-            // 
-            this.picAdd.Image = global::FunkyBox.Properties.Resources.plus1;
-            this.picAdd.Location = new System.Drawing.Point(876, 115);
-            this.picAdd.Name = "picAdd";
-            this.picAdd.Size = new System.Drawing.Size(26, 26);
-            this.picAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAdd.TabIndex = 20;
-            this.picAdd.TabStop = false;
-            this.picAdd.Click += new System.EventHandler(this.picAdd_Click);
             // 
             // frmCreateCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Controls.Add(this.picAdd);
             this.Controls.Add(this.txtAddVehicle);
             this.Controls.Add(this.lblVehicle);
             this.Controls.Add(this.lblTitle);
@@ -267,7 +265,6 @@
             this.Controls.Add(this.lblName);
             this.Name = "frmCreateCustomer";
             this.Text = "Création d\'un client";
-            ((System.ComponentModel.ISupportInitialize)(this.picAdd)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,7 +291,6 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblVehicle;
         private System.Windows.Forms.TextBox txtAddVehicle;
-        private System.Windows.Forms.PictureBox picAdd;
     }
 }
 

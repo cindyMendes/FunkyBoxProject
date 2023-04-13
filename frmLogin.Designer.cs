@@ -96,6 +96,7 @@ namespace FunkyBox
             // 
             // Quit
             // 
+            this.Quit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Quit.BackColor = System.Drawing.Color.CornflowerBlue;
             this.Quit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Quit.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);

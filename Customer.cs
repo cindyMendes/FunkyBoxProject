@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FunkyBox
 {
-    internal class Customer
+    public class Customer
     {
         /// <summary>
         /// Prénom du client
@@ -41,11 +41,11 @@ namespace FunkyBox
         /// <summary>
         /// Le numéro de voie
         /// </summary>
-        private int streetNumber;
+        private string streetNumber;
         /// <summary>
         /// Obtient et Définit le numéro de voie
         /// </summary>
-        public int StreetNumber
+        public string StreetNumber
         {
             get { return streetNumber; }
             set { streetNumber = value; }
@@ -108,44 +108,6 @@ namespace FunkyBox
             set { city = value; }
         }
 
-        ///// <summary>
-        ///// La liste des plaques d'immatriculation
-        ///// </summary>
-        //private List<string> licencePlate;
-
-        ///// <summary>
-        ///// Obtient et définit la liste des plaques d'immatriculation
-        ///// </summary>
-        //public List<string> LicencePlate
-        //{
-        //    get { return licencePlate; }
-        //    set { licencePlate = value; }
-        //}
-
-
-        /// <summary>
-        /// constructeur d'initialisation
-        /// </summary>
-        /// <param name="FN"></param>
-        /// <param name="LN"></param>
-        /// <param name="SNb"></param>
-        /// <param name="ST"></param>
-        /// <param name="SNa"></param>
-        /// <param name="PC"></param>
-        /// <param name="Ct"></param>
-        //public Customer(string FN, string LN, int SNb, string ST, string SNa, string PC, string Ct, List<string> LP)
-        //{
-        //    this.FirstName = FN;
-        //    this.LastName = LN;
-        //    this.StreetNumber = SNb;
-        //    this.StreetType = ST;
-        //    this.StreetName = SNa;
-        //    this.PostalCode = PC;
-        //    this.City = Ct;
-        //    this.LicencePlate = LP;
-        //}
-
-
         private string licencePlate;
 
         public string LicencePlate
@@ -154,7 +116,7 @@ namespace FunkyBox
             set { licencePlate = value; }
         }
 
-        public Customer(string FN, string LN, int SNb, string ST, string SNa, string PC, string Ct, string LP)
+        public Customer(string FN, string LN, string SNb, string ST, string SNa, string PC, string Ct, string LP)
         {
             this.FirstName = FN;
             this.LastName = LN;
@@ -165,14 +127,6 @@ namespace FunkyBox
             this.City = Ct;
             this.LicencePlate = LP;
         }
-
-
-
-        //public override string ToString()
-        //{
-        //    return "Résultats : " + this.FirstName + " " + this.LastName + " " + this.StreetNumber + " " + this.StreetType + " " + this.StreetName + " " + this.PostalCode + " " + this.City;
-        //}
-
 
     } //endclass
 }//endnamespace
