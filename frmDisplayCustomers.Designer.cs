@@ -28,31 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnValid = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblLastName = new System.Windows.Forms.Label();
-            this.lblStreetNumber = new System.Windows.Forms.Label();
-            this.lblStreetType = new System.Windows.Forms.Label();
-            this.lblStreetName = new System.Windows.Forms.Label();
-            this.lblPostalCode = new System.Windows.Forms.Label();
-            this.lblCity = new System.Windows.Forms.Label();
-            this.lblLicence = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.lblFirstName = new System.Windows.Forms.Label();
             this.grdCustomers = new System.Windows.Forms.DataGridView();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.btnReturnHome = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdCustomers)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnValid
+            // grdCustomers
             // 
             this.btnValid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnValid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -64,6 +47,13 @@
             this.btnValid.Text = "Valider";
             this.btnValid.UseVisualStyleBackColor = false;
             this.btnValid.Click += new System.EventHandler(this.btnValid_Click);
+            this.grdCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdCustomers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(26)))), ((int)(((byte)(30)))));
+            this.grdCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdCustomers.Location = new System.Drawing.Point(78, 114);
+            this.grdCustomers.Name = "grdCustomers";
+            this.grdCustomers.Size = new System.Drawing.Size(837, 292);
+            this.grdCustomers.TabIndex = 46;
             // 
             // btnCancel
             // 
@@ -83,78 +73,41 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblTitle.Location = new System.Drawing.Point(37, 9);
+            this.lblTitle.Location = new System.Drawing.Point(68, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(345, 55);
-            this.lblTitle.TabIndex = 17;
+            this.lblTitle.TabIndex = 47;
             this.lblTitle.Text = "Afficher Clients";
             // 
-            // label1
+            // btnReturnHome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(49, 93);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 18);
-            this.label1.TabIndex = 37;
+            this.btnReturnHome.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnReturnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturnHome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnReturnHome.Location = new System.Drawing.Point(618, 447);
+            this.btnReturnHome.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReturnHome.Name = "btnReturnHome";
+            this.btnReturnHome.Size = new System.Drawing.Size(129, 53);
+            this.btnReturnHome.TabIndex = 49;
+            this.btnReturnHome.Text = "Fermer";
+            this.btnReturnHome.UseVisualStyleBackColor = false;
+            this.btnReturnHome.Click += new System.EventHandler(this.btnReturnHome_Click);
             // 
-            // lblLastName
+            // btnAdd
             // 
-            this.lblLastName.AutoSize = true;
-            this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblLastName.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblLastName.Location = new System.Drawing.Point(49, 130);
-            this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(41, 18);
-            this.lblLastName.TabIndex = 38;
-            this.lblLastName.Text = "Nom";
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.Black;
+            this.btnAdd.Location = new System.Drawing.Point(786, 447);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(129, 53);
+            this.btnAdd.TabIndex = 48;
+            this.btnAdd.Text = "Ajouter";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // lblStreetNumber
-            // 
-            this.lblStreetNumber.AutoSize = true;
-            this.lblStreetNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblStreetNumber.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblStreetNumber.Location = new System.Drawing.Point(49, 166);
-            this.lblStreetNumber.Name = "lblStreetNumber";
-            this.lblStreetNumber.Size = new System.Drawing.Size(25, 18);
-            this.lblStreetNumber.TabIndex = 39;
-            this.lblStreetNumber.Text = "N°";
-            // 
-            // lblStreetType
-            // 
-            this.lblStreetType.AutoSize = true;
-            this.lblStreetType.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblStreetType.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblStreetType.Location = new System.Drawing.Point(49, 207);
-            this.lblStreetType.Name = "lblStreetType";
-            this.lblStreetType.Size = new System.Drawing.Size(91, 18);
-            this.lblStreetType.TabIndex = 40;
-            this.lblStreetType.Text = "Type de voie";
-            // 
-            // lblStreetName
-            // 
-            this.lblStreetName.AutoSize = true;
-            this.lblStreetName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblStreetName.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblStreetName.Location = new System.Drawing.Point(389, 93);
-            this.lblStreetName.Name = "lblStreetName";
-            this.lblStreetName.Size = new System.Drawing.Size(62, 18);
-            this.lblStreetName.TabIndex = 41;
-            this.lblStreetName.Text = "Adresse";
-            // 
-            // lblPostalCode
-            // 
-            this.lblPostalCode.AutoSize = true;
-            this.lblPostalCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lblPostalCode.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.lblPostalCode.Location = new System.Drawing.Point(389, 130);
-            this.lblPostalCode.Name = "lblPostalCode";
-            this.lblPostalCode.Size = new System.Drawing.Size(90, 18);
-            this.lblPostalCode.TabIndex = 42;
-            this.lblPostalCode.Text = "Code Postal";
-            // 
-            // lblCity
+            // frmDisplayCustomersBis
             // 
             this.lblCity.AutoSize = true;
             this.lblCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
@@ -259,29 +212,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Controls.Add(this.lblFirstName);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.grdCustomers);
-            this.Controls.Add(this.lblLicence);
-            this.Controls.Add(this.lblCity);
-            this.Controls.Add(this.lblPostalCode);
-            this.Controls.Add(this.lblStreetName);
-            this.Controls.Add(this.lblStreetType);
-            this.Controls.Add(this.lblStreetNumber);
-            this.Controls.Add(this.lblLastName);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnValid);
+            this.Controls.Add(this.btnReturnHome);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblTitle);
-            this.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.Name = "frmDisplayCustomers";
+            this.Controls.Add(this.grdCustomers);
+            this.Name = "frmDisplayCustomersBis";
             this.Text = "Afficher clients";
             ((System.ComponentModel.ISupportInitialize)(this.grdCustomers)).EndInit();
             this.ResumeLayout(false);
@@ -290,26 +225,10 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnValid;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblLastName;
-        private System.Windows.Forms.Label lblStreetNumber;
-        private System.Windows.Forms.Label lblStreetType;
-        private System.Windows.Forms.Label lblStreetName;
-        private System.Windows.Forms.Label lblPostalCode;
-        private System.Windows.Forms.Label lblCity;
-        private System.Windows.Forms.Label lblLicence;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label lblFirstName;
+
         private System.Windows.Forms.DataGridView grdCustomers;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Button btnReturnHome;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

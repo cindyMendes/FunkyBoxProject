@@ -4,58 +4,66 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Collections.Specialized.BitVector32;
 
 namespace FunkyBox
 {
     public partial class frmDisplayCustomers : Form
     {
-        DataTable newCustomer = new DataTable();
+
+        public static List<Customer> sdCustomers = new List<Customer>();
+        public static DataTable displayCustomers = new DataTable();
+
 
         public frmDisplayCustomers()
         {
             InitializeComponent();
-            newCustomer.Columns.Add(new DataColumn("Nom", typeof(System.String)));
-            newCustomer.Columns.Add(new DataColumn("Prénom", typeof(System.String)));
-            newCustomer.Columns.Add(new DataColumn("Numéro de rue", typeof(System.String)));
-            newCustomer.Columns.Add(new DataColumn("Type de voie", typeof(System.String)));
-            newCustomer.Columns.Add(new DataColumn("Adresse", typeof(System.String)));
-            newCustomer.Columns.Add(new DataColumn("Code postal", typeof(System.String)));
-            newCustomer.Columns.Add(new DataColumn("Ville", typeof(System.String)));
-            newCustomer.Columns.Add(new DataColumn("Plaque d'immatriculation", typeof(System.String)));
-            grdCustomers.DataSource = newCustomer;
 
-        }
+            if (displayCustomers.Columns.Count == 0)
+            {
+                displayCustomers.Columns.Add(new DataColumn("Nom", typeof(System.String)));
+                displayCustomers.Columns.Add(new DataColumn("Prénom", typeof(System.String)));
+                displayCustomers.Columns.Add(new DataColumn("Numéro de rue", typeof(System.String)));
+                displayCustomers.Columns.Add(new DataColumn("Type de voie", typeof(System.String)));
+                displayCustomers.Columns.Add(new DataColumn("Adresse", typeof(System.String)));
+                displayCustomers.Columns.Add(new DataColumn("Code postal", typeof(System.String)));
+                displayCustomers.Columns.Add(new DataColumn("Ville", typeof(System.String)));
+                displayCustomers.Columns.Add(new DataColumn("Plaque d'immatriculation", typeof(System.String)));
+            }
 
-        public void AddCustomer()
-        {
-            DataRow nc;
-            nc = newCustomer.NewRow();
-            nc[0] = textBox1.Text;
-            nc[1] = textBox2.Text;
-            nc[2] = textBox3.Text;
-            nc[3] = textBox4.Text;
-            nc[4] = textBox5.Text;
-            nc[5] = textBox6.Text;
-            nc[6] = textBox7.Text;
-            nc[7] = textBox8.Text;
-            newCustomer.Rows.Add(nc);
-        }
+            foreach (Customer newCustomer in sdCustomers)
+            {
+                DataRow dr = displayCustomers.NewRow();
+                dr[0] = newCustomer.FirstName;
+                dr[1] = newCustomer.LastName;
+                dr[2] = newCustomer.StreetNumber;
+                dr[3] = newCustomer.StreetType;
+                dr[4] = newCustomer.StreetName;
+                dr[5] = newCustomer.PostalCode;
+                dr[6] = newCustomer.City;
+                dr[7] = newCustomer.LicencePlate;
+                displayCustomers.Rows.Add(dr);
+            }
+            grdCustomers.DataSource = displayCustomers;
 
-        public void btnValid_Click(object sender, EventArgs e)
-        {
-            AddCustomer();
-        }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        } // end frmDisplayCustomersBis
+
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-        
-    
+            displayCustomers.Clear();
+            frmCreateCustomer frmCC = new frmCreateCustomer();
+            frmCC.ShowDialog();
+        } // end btnAdd_Click
+
+        private void btnReturnHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        } // end btnReturnHome_Click
+
+
     } // end class
 } // end namespace

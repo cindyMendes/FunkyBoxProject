@@ -24,6 +24,12 @@ namespace FunkyBox
             InitializeComponent();
         } // end frmCreateCustomer
 
+        public void AddCustomer()
+        {
+            Customer newCustomer = new Customer(txtFirstname.Text, txtLastname.Text, txtStreetNumber.Text, txtStreetType.Text, txtStreetName.Text, txtPostalCode.Text, txtCity.Text, txtAddVehicle.Text);
+            frmDisplayCustomers.sdCustomers.Add(newCustomer);
+        }
+
         private void btnSave_Click(object sender, EventArgs e)
         {
             //List<string> oneLP = new List<string>();
@@ -46,7 +52,7 @@ namespace FunkyBox
 
             //c.Ajouter(c);
             //MessageBox.Show(c.AllCustomersDict.Values.Count.ToString()) ;
-            
+
             //dt.Location = new Point(100, 150);
             //dt.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             //dt.Size = new Size(500, 200);
@@ -54,7 +60,12 @@ namespace FunkyBox
 
             //displayCustomerForm.Controls.Add(dt);
             //displayCustomerForm.Show();
-            
+
+
+            AddCustomer();
+            this.Close();
+            frmDisplayCustomers frmDC = new frmDisplayCustomers();
+            frmDC.Show();
 
         } // end btnSave_Click
 
