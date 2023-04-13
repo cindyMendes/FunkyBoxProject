@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDisplayCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisplayCustomers.Designer.cs">
+      <DependentUpon>frmDisplayCustomers.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDisplayGarages.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDisplayGarages.Designer.cs">
       <DependentUpon>frmDisplayGarages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisplayParking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisplayParking.Designer.cs">
+      <DependentUpon>frmDisplayParking.cs</DependentUpon>
     </Compile>
     <Compile Include="frmHome.cs">
       <SubType>Form</SubType>
@@ -77,12 +89,6 @@
     </Compile>
     <Compile Include="frmCreateParking.Designer.cs">
       <DependentUpon>frmCreateParking.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmDisplayCustomers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDisplayCustomers.Designer.cs">
-      <DependentUpon>frmDisplayCustomers.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>

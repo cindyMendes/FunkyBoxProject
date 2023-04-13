@@ -39,6 +39,9 @@
             this.lblPkgAddressNmbr = new System.Windows.Forms.Label();
             this.txtStreetNumber = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnParkingConfirm = new System.Windows.Forms.Button();
+            this.btnParkingCancel = new System.Windows.Forms.Button();
+            this.btnParkingDisplay = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtParkingName
@@ -142,12 +145,87 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Nouveau parking";
             // 
+            // btnParkingConfirm
+            // 
+            this.btnParkingConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnParkingConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnParkingConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnParkingConfirm.Location = new System.Drawing.Point(413, 353);
+            this.btnParkingConfirm.Name = "btnParkingConfirm";
+            this.btnParkingConfirm.Size = new System.Drawing.Size(75, 23);
+            this.btnParkingConfirm.TabIndex = 11;
+            this.btnParkingConfirm.Text = "Confirmer";
+            this.btnParkingConfirm.UseVisualStyleBackColor = false;
+            this.btnParkingConfirm.Click += new System.EventHandler(this.btnParkingConfirm_Click);
+            // 
+            // btnParkingCancel
+            // 
+            this.btnParkingCancel.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnParkingCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnParkingCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnParkingCancel.Location = new System.Drawing.Point(298, 353);
+            this.btnParkingCancel.Name = "btnParkingCancel";
+            this.btnParkingCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnParkingCancel.TabIndex = 12;
+            this.btnParkingCancel.Text = "Annuler";
+            this.btnParkingCancel.UseVisualStyleBackColor = false;
+            // 
+            // btnParkingDisplay
+            // 
+            this.btnParkingDisplay.Location = new System.Drawing.Point(414, 402);
+            this.btnParkingDisplay.Name = "btnParkingDisplay";
+            this.btnParkingDisplay.Size = new System.Drawing.Size(75, 23);
+            this.btnParkingDisplay.TabIndex = 13;
+            this.btnParkingDisplay.Text = "Affichage liste";
+            this.btnParkingDisplay.UseVisualStyleBackColor = true;
+            this.btnParkingDisplay.Click += new System.EventHandler(this.btnParkingDisplay_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(68, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(708, 55);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Création d\'un nouveau parking";
+            // 
+            // btnPkgCreateCnfrm
+            // 
+            this.btnPkgCreateCnfrm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnPkgCreateCnfrm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPkgCreateCnfrm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPkgCreateCnfrm.ForeColor = System.Drawing.Color.Black;
+            this.btnPkgCreateCnfrm.Location = new System.Drawing.Point(528, 320);
+            this.btnPkgCreateCnfrm.Name = "btnPkgCreateCnfrm";
+            this.btnPkgCreateCnfrm.Size = new System.Drawing.Size(122, 34);
+            this.btnPkgCreateCnfrm.TabIndex = 11;
+            this.btnPkgCreateCnfrm.Text = "Créer";
+            this.btnPkgCreateCnfrm.UseVisualStyleBackColor = false;
+            // 
+            // btnPkgCreateCncl
+            // 
+            this.btnPkgCreateCncl.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnPkgCreateCncl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPkgCreateCncl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPkgCreateCncl.ForeColor = System.Drawing.Color.Black;
+            this.btnPkgCreateCncl.Location = new System.Drawing.Point(366, 320);
+            this.btnPkgCreateCncl.Name = "btnPkgCreateCncl";
+            this.btnPkgCreateCncl.Size = new System.Drawing.Size(122, 34);
+            this.btnPkgCreateCncl.TabIndex = 12;
+            this.btnPkgCreateCncl.Text = "Annuler";
+            this.btnPkgCreateCncl.UseVisualStyleBackColor = false;
+            // 
             // frmCreateParking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(1284, 611);
+            this.Controls.Add(this.btnParkingDisplay);
+            this.Controls.Add(this.btnParkingCancel);
+            this.Controls.Add(this.btnParkingConfirm);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblPkgAddressNmbr);
             this.Controls.Add(this.txtStreetNumber);
@@ -179,5 +257,10 @@
         private System.Windows.Forms.Label lblPkgAddressNmbr;
         private System.Windows.Forms.TextBox txtStreetNumber;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnParkingConfirm;
+        private System.Windows.Forms.Button btnParkingCancel;
+        private System.Windows.Forms.Button btnParkingDisplay;
+        private System.Windows.Forms.Button btnPkgCreateCnfrm;
+        private System.Windows.Forms.Button btnPkgCreateCncl;
     }
 }

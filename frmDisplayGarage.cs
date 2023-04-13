@@ -38,9 +38,9 @@ namespace FunkyBox
         //    displayGarages.Rows.Add(dr);
         //}
 
-        public frmDisplayGarage()
-        {
-            InitializeComponent();
-        }
+        //public frmDisplayGarage()
+        //{
+        //    InitializeComponent();
+        //}
     }
 }

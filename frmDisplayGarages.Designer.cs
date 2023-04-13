@@ -49,9 +49,9 @@
             // btnAddGarage
             // 
             this.btnAddGarage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnAddGarage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddGarage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddGarage.ForeColor = System.Drawing.Color.Black;
-            this.btnAddGarage.Location = new System.Drawing.Point(786, 447);
+            this.btnAddGarage.Location = new System.Drawing.Point(618, 447);
             this.btnAddGarage.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddGarage.Name = "btnAddGarage";
             this.btnAddGarage.Size = new System.Drawing.Size(129, 53);
@@ -74,13 +74,13 @@
             // btnReturnHome
             // 
             this.btnReturnHome.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnReturnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturnHome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnReturnHome.Location = new System.Drawing.Point(618, 447);
+            this.btnReturnHome.Location = new System.Drawing.Point(786, 447);
             this.btnReturnHome.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturnHome.Name = "btnReturnHome";
             this.btnReturnHome.Size = new System.Drawing.Size(129, 53);
-            this.btnReturnHome.TabIndex = 19;
+            this.btnReturnHome.TabIndex = 2;
             this.btnReturnHome.Text = "Fermer";
             this.btnReturnHome.UseVisualStyleBackColor = false;
             this.btnReturnHome.Click += new System.EventHandler(this.btnReturnHome_Click);
