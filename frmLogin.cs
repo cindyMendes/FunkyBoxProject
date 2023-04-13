@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.OleDb;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,8 @@ namespace FunkyBox
 {
     public partial class frmLogin : Form
     {
+        Label lbl5 = new Label();
+        Label lbl6 = new Label();
         OleDbConnection connexion = new OleDbConnection();
         public frmLogin()
         {
@@ -37,11 +40,18 @@ namespace FunkyBox
                 else
                 label3.Visible = true;
             }
-            
-            
 
-           
         }
+            private void valid_MouseEnter(object sender, EventArgs e)
+            {
+                valid.ForeColor = Color.Black;
+            }
+            private void valid_MouseLeave(object sender, EventArgs e)
+            {
+                valid.ForeColor = Color.White;
+            }
+
+
 
         private void Quit_Click (object sender, EventArgs e)
         {
@@ -62,6 +72,48 @@ namespace FunkyBox
                 textBox2.UseSystemPasswordChar = true;
         
         }
-        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Quit_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void Quit_MouseEnter(object sender, EventArgs e)
+        {
+            valid.ForeColor = Color.Black;
+        }
+        private void Quit_MouseLeave(object sender, EventArgs e)
+        {
+            valid.ForeColor = Color.White;
+        }
+
+        private void textBox2_MouseHover(object sender, EventArgs e)
+        {
+            lbl5.Text = "Saisir mot de passe";
+            lbl5.Location = new Point(282,114);
+            this.Controls.Add(lbl5);
+            
+        }
+
+        private void textBox2_MouseLeave(object sender, EventArgs e)
+        {
+            this.Controls.Remove(lbl5);
+        }
+
+        private void textBox1_MouseHover(object sender, EventArgs e)
+        {
+            lbl6.Text = "Saisir le login";
+            lbl6.Location = new Point(282,55);
+            this.Controls.Add(lbl6);
+        }
+
+        private void textBox1_MouseLeave(object sender, EventArgs e)
+        {
+            this.Controls.Remove(lbl6);
+        }
     }
 }
