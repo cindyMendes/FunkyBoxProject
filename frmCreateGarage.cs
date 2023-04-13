@@ -20,21 +20,26 @@ namespace FunkyBox
         {
             Garage newGarage = new Garage(txtGarageNb.Text, txtParkingName.Text, Double.Parse(txtMonthlyRent.Text), Double.Parse(txtMonthlyFees.Text), txtTenantName.Text, DateTime.Parse(txtStartRent.Text));
             frmDisplayGarages.sdGarages.Add(newGarage);
+            MessageBox.Show("Le box a bien été ajouté.");
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmDisplayGarages frmDG = new frmDisplayGarages();
-            frmDG.ShowDialog();
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             AddGarage();
-            this.Close();
-            frmDisplayGarages frmDG = new frmDisplayGarages();
-            frmDG.ShowDialog();
+            foreach (Control c in this.Controls)
+            {
+                if (c is TextBox)
+                {
+                    c.Text = "";
+                }
+            }
+               
         }
     }
 }

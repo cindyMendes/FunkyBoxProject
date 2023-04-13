@@ -45,7 +45,7 @@ namespace FunkyBox
             this.log.AutoSize = true;
             this.log.BackColor = System.Drawing.Color.Transparent;
             this.log.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.log.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.log.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.log.Location = new System.Drawing.Point(55, 28);
             this.log.Name = "log";
             this.log.Size = new System.Drawing.Size(44, 18);
@@ -57,7 +57,7 @@ namespace FunkyBox
             // 
             this.mdp.AutoSize = true;
             this.mdp.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mdp.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.mdp.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.mdp.Location = new System.Drawing.Point(17, 64);
             this.mdp.Name = "mdp";
             this.mdp.Size = new System.Drawing.Size(98, 18);
@@ -113,7 +113,7 @@ namespace FunkyBox
             // 
             this.checkBox.AutoSize = true;
             this.checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.checkBox.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.checkBox.Location = new System.Drawing.Point(133, 99);
             this.checkBox.Name = "checkBox";
             this.checkBox.Size = new System.Drawing.Size(139, 19);
