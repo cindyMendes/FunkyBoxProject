@@ -121,7 +121,7 @@
             this.txtLastname.Location = new System.Drawing.Point(254, 155);
             this.txtLastname.Name = "txtLastname";
             this.txtLastname.Size = new System.Drawing.Size(284, 26);
-            this.txtLastname.TabIndex = 7;
+            this.txtLastname.TabIndex = 2;
             // 
             // lblFirstname
             // 
@@ -140,7 +140,7 @@
             this.txtFirstname.Location = new System.Drawing.Point(254, 115);
             this.txtFirstname.Name = "txtFirstname";
             this.txtFirstname.Size = new System.Drawing.Size(284, 26);
-            this.txtFirstname.TabIndex = 8;
+            this.txtFirstname.TabIndex = 1;
             // 
             // txtStreetNumber
             // 
@@ -148,7 +148,7 @@
             this.txtStreetNumber.Location = new System.Drawing.Point(254, 195);
             this.txtStreetNumber.Name = "txtStreetNumber";
             this.txtStreetNumber.Size = new System.Drawing.Size(84, 26);
-            this.txtStreetNumber.TabIndex = 9;
+            this.txtStreetNumber.TabIndex = 3;
             // 
             // txtStreetType
             // 
@@ -156,7 +156,7 @@
             this.txtStreetType.Location = new System.Drawing.Point(254, 235);
             this.txtStreetType.Name = "txtStreetType";
             this.txtStreetType.Size = new System.Drawing.Size(284, 26);
-            this.txtStreetType.TabIndex = 10;
+            this.txtStreetType.TabIndex = 4;
             // 
             // txtStreetName
             // 
@@ -164,7 +164,7 @@
             this.txtStreetName.Location = new System.Drawing.Point(254, 275);
             this.txtStreetName.Name = "txtStreetName";
             this.txtStreetName.Size = new System.Drawing.Size(284, 26);
-            this.txtStreetName.TabIndex = 11;
+            this.txtStreetName.TabIndex = 5;
             // 
             // txtPostalCode
             // 
@@ -172,7 +172,7 @@
             this.txtPostalCode.Location = new System.Drawing.Point(254, 315);
             this.txtPostalCode.Name = "txtPostalCode";
             this.txtPostalCode.Size = new System.Drawing.Size(84, 26);
-            this.txtPostalCode.TabIndex = 12;
+            this.txtPostalCode.TabIndex = 6;
             // 
             // txtCity
             // 
@@ -180,7 +180,7 @@
             this.txtCity.Location = new System.Drawing.Point(254, 355);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(284, 26);
-            this.txtCity.TabIndex = 13;
+            this.txtCity.TabIndex = 7;
             // 
             // btnSave
             // 
@@ -190,7 +190,7 @@
             this.btnSave.Location = new System.Drawing.Point(254, 473);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(129, 53);
-            this.btnSave.TabIndex = 14;
+            this.btnSave.TabIndex = 9;
             this.btnSave.Text = "Valider";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -203,7 +203,7 @@
             this.btnCancel.Location = new System.Drawing.Point(418, 473);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(129, 53);
-            this.btnCancel.TabIndex = 15;
+            this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Annuler";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -236,7 +236,7 @@
             this.txtAddVehicle.Location = new System.Drawing.Point(254, 395);
             this.txtAddVehicle.Name = "txtAddVehicle";
             this.txtAddVehicle.Size = new System.Drawing.Size(284, 26);
-            this.txtAddVehicle.TabIndex = 19;
+            this.txtAddVehicle.TabIndex = 8;
             // 
             // frmCreateCustomer
             // 
