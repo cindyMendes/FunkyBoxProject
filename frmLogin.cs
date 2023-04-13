@@ -29,10 +29,15 @@ namespace FunkyBox
             if (textBox1.Text == "login")
             {
                 if (textBox2.Text == "mdp")
+                {
                     this.Hide();
+                    frmHome frmHome = new frmHome();
+                    frmHome.Show();
+                }
                 else
                 label3.Visible = true;
             }
+            
             
 
            
@@ -57,5 +62,6 @@ namespace FunkyBox
                 textBox2.UseSystemPasswordChar = true;
         
         }
+        
     }
 }
