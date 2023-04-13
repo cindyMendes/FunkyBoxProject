@@ -48,7 +48,7 @@ namespace FunkyBox
             this.textBox1.Font = new System.Drawing.Font("Arial", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(160, 57);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 25);
+            this.textBox1.Size = new System.Drawing.Size(141, 25);
             this.textBox1.TabIndex = 2;
             this.textBox1.MouseLeave += new System.EventHandler(this.textBox1_MouseLeave);
             this.textBox1.MouseHover += new System.EventHandler(this.textBox1_MouseHover);
@@ -58,7 +58,7 @@ namespace FunkyBox
             this.textBox2.Font = new System.Drawing.Font("Arial", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(160, 115);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 25);
+            this.textBox2.Size = new System.Drawing.Size(139, 25);
             this.textBox2.TabIndex = 3;
             this.textBox2.UseSystemPasswordChar = true;
             this.textBox2.MouseLeave += new System.EventHandler(this.textBox2_MouseLeave);
@@ -72,11 +72,11 @@ namespace FunkyBox
             this.valid.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.valid.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.valid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.valid.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valid.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.valid.ForeColor = System.Drawing.Color.Transparent;
-            this.valid.Location = new System.Drawing.Point(148, 286);
+            this.valid.Location = new System.Drawing.Point(96, 284);
             this.valid.Name = "valid";
-            this.valid.Size = new System.Drawing.Size(122, 34);
+            this.valid.Size = new System.Drawing.Size(205, 34);
             this.valid.TabIndex = 4;
             this.valid.Text = "Valider";
             this.valid.UseVisualStyleBackColor = false;
@@ -90,11 +90,11 @@ namespace FunkyBox
             this.Quit.FlatAppearance.BorderSize = 2;
             this.Quit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
             this.Quit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Quit.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Quit.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Quit.ForeColor = System.Drawing.Color.Transparent;
-            this.Quit.Location = new System.Drawing.Point(148, 348);
+            this.Quit.Location = new System.Drawing.Point(96, 346);
             this.Quit.Name = "Quit";
-            this.Quit.Size = new System.Drawing.Size(122, 34);
+            this.Quit.Size = new System.Drawing.Size(203, 34);
             this.Quit.TabIndex = 5;
             this.Quit.Text = "Quitter";
             this.Quit.UseVisualStyleBackColor = false;
@@ -105,7 +105,7 @@ namespace FunkyBox
             this.checkBox.AutoSize = true;
             this.checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.checkBox.Location = new System.Drawing.Point(160, 177);
+            this.checkBox.Location = new System.Drawing.Point(160, 189);
             this.checkBox.Name = "checkBox";
             this.checkBox.Size = new System.Drawing.Size(139, 19);
             this.checkBox.TabIndex = 6;
@@ -117,7 +117,7 @@ namespace FunkyBox
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(122, 235);
+            this.label3.Location = new System.Drawing.Point(104, 236);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(179, 15);
             this.label3.TabIndex = 7;

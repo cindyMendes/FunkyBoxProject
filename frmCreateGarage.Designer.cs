@@ -127,7 +127,7 @@
             this.btnCancel.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(786, 447);
+            this.btnCancel.Location = new System.Drawing.Point(300, 447);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(129, 53);
             this.btnCancel.TabIndex = 8;
@@ -140,7 +140,7 @@
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(618, 447);
+            this.btnSave.Location = new System.Drawing.Point(455, 447);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(129, 53);
             this.btnSave.TabIndex = 7;
@@ -151,7 +151,7 @@
             // txtParkingName
             // 
             this.txtParkingName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtParkingName.Location = new System.Drawing.Point(373, 154);
+            this.txtParkingName.Location = new System.Drawing.Point(300, 154);
             this.txtParkingName.Name = "txtParkingName";
             this.txtParkingName.Size = new System.Drawing.Size(284, 26);
             this.txtParkingName.TabIndex = 2;
@@ -159,7 +159,7 @@
             // txtMonthlyFees
             // 
             this.txtMonthlyFees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMonthlyFees.Location = new System.Drawing.Point(373, 234);
+            this.txtMonthlyFees.Location = new System.Drawing.Point(300, 234);
             this.txtMonthlyFees.Name = "txtMonthlyFees";
             this.txtMonthlyFees.Size = new System.Drawing.Size(84, 26);
             this.txtMonthlyFees.TabIndex = 4;
@@ -167,7 +167,7 @@
             // txtGarageNb
             // 
             this.txtGarageNb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGarageNb.Location = new System.Drawing.Point(373, 114);
+            this.txtGarageNb.Location = new System.Drawing.Point(300, 114);
             this.txtGarageNb.Name = "txtGarageNb";
             this.txtGarageNb.Size = new System.Drawing.Size(84, 26);
             this.txtGarageNb.TabIndex = 1;
@@ -175,7 +175,7 @@
             // txtMonthlyRent
             // 
             this.txtMonthlyRent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMonthlyRent.Location = new System.Drawing.Point(373, 194);
+            this.txtMonthlyRent.Location = new System.Drawing.Point(300, 194);
             this.txtMonthlyRent.Name = "txtMonthlyRent";
             this.txtMonthlyRent.Size = new System.Drawing.Size(84, 26);
             this.txtMonthlyRent.TabIndex = 3;
@@ -183,7 +183,7 @@
             // txtTenantName
             // 
             this.txtTenantName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenantName.Location = new System.Drawing.Point(373, 274);
+            this.txtTenantName.Location = new System.Drawing.Point(300, 274);
             this.txtTenantName.Name = "txtTenantName";
             this.txtTenantName.Size = new System.Drawing.Size(284, 26);
             this.txtTenantName.TabIndex = 5;
@@ -191,7 +191,7 @@
             // txtStartRent
             // 
             this.txtStartRent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStartRent.Location = new System.Drawing.Point(373, 314);
+            this.txtStartRent.Location = new System.Drawing.Point(300, 314);
             this.txtStartRent.Name = "txtStartRent";
             this.txtStartRent.Size = new System.Drawing.Size(84, 26);
             this.txtStartRent.TabIndex = 6;
