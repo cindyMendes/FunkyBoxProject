@@ -59,7 +59,7 @@
             // btnReturnHome
             // 
             this.btnReturnHome.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnReturnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturnHome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnReturnHome.Location = new System.Drawing.Point(618, 447);
             this.btnReturnHome.Margin = new System.Windows.Forms.Padding(2);
@@ -73,7 +73,7 @@
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
             this.btnAdd.Location = new System.Drawing.Point(786, 447);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
@@ -84,7 +84,7 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // frmDisplayCustomersBis
+            // frmDisplayCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -94,7 +94,7 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.grdCustomers);
-            this.Name = "frmDisplayCustomersBis";
+            this.Name = "frmDisplayCustomers";
             this.Text = "Afficher clients";
             ((System.ComponentModel.ISupportInitialize)(this.grdCustomers)).EndInit();
             this.ResumeLayout(false);
