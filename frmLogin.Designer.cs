@@ -46,7 +46,7 @@ namespace FunkyBox
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Font = new System.Drawing.Font("Arial", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(160, 73);
+            this.textBox1.Location = new System.Drawing.Point(160, 57);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 25);
             this.textBox1.TabIndex = 2;
@@ -56,7 +56,7 @@ namespace FunkyBox
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Arial", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(160, 131);
+            this.textBox2.Location = new System.Drawing.Point(160, 115);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(125, 25);
             this.textBox2.TabIndex = 3;
@@ -127,7 +127,7 @@ namespace FunkyBox
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FunkyBox.Properties.Resources.profile;
-            this.pictureBox1.Location = new System.Drawing.Point(96, 67);
+            this.pictureBox1.Location = new System.Drawing.Point(96, 51);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 36);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,7 +137,7 @@ namespace FunkyBox
             // pictureBox2
             // 
             this.pictureBox2.Image = global::FunkyBox.Properties.Resources.istockphoto_1148287609_170667a1;
-            this.pictureBox2.Location = new System.Drawing.Point(96, 126);
+            this.pictureBox2.Location = new System.Drawing.Point(96, 110);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 36);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
