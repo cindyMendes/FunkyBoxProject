@@ -62,5 +62,10 @@ namespace FunkyBox
             frmDisplayGarages frmDG = new frmDisplayGarages();
             initForm(frmDG);
         }
+
+        private void frmHome_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     } // end class
 } // end namespace

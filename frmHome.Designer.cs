@@ -30,14 +30,14 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.clientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.afficherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parkingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajouterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.afficherToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajouterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.boxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajouterToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.afficherToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajouterToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +50,7 @@
             this.boxToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(984, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 40);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -63,19 +63,19 @@
             this.clientToolStripMenuItem.Size = new System.Drawing.Size(88, 36);
             this.clientToolStripMenuItem.Text = "Client";
             // 
-            // ajouterToolStripMenuItem
-            // 
-            this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(171, 36);
-            this.ajouterToolStripMenuItem.Text = "Ajouter";
-            this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterToolStripMenuItem_Click);
-            // 
             // afficherToolStripMenuItem
             // 
             this.afficherToolStripMenuItem.Name = "afficherToolStripMenuItem";
             this.afficherToolStripMenuItem.Size = new System.Drawing.Size(171, 36);
             this.afficherToolStripMenuItem.Text = "Afficher";
             this.afficherToolStripMenuItem.Click += new System.EventHandler(this.afficherToolStripMenuItem_Click);
+            // 
+            // ajouterToolStripMenuItem
+            // 
+            this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(171, 36);
+            this.ajouterToolStripMenuItem.Text = "Ajouter";
+            this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterToolStripMenuItem_Click);
             // 
             // parkingToolStripMenuItem
             // 
@@ -86,19 +86,19 @@
             this.parkingToolStripMenuItem.Size = new System.Drawing.Size(104, 36);
             this.parkingToolStripMenuItem.Text = "Parking";
             // 
-            // ajouterToolStripMenuItem1
-            // 
-            this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
-            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(171, 36);
-            this.ajouterToolStripMenuItem1.Text = "Ajouter";
-            this.ajouterToolStripMenuItem1.Click += new System.EventHandler(this.ajouterToolStripMenuItem1_Click);
-            // 
             // afficherToolStripMenuItem1
             // 
             this.afficherToolStripMenuItem1.Name = "afficherToolStripMenuItem1";
             this.afficherToolStripMenuItem1.Size = new System.Drawing.Size(171, 36);
             this.afficherToolStripMenuItem1.Text = "Afficher";
             this.afficherToolStripMenuItem1.Click += new System.EventHandler(this.afficherToolStripMenuItem1_Click);
+            // 
+            // ajouterToolStripMenuItem1
+            // 
+            this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
+            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(171, 36);
+            this.ajouterToolStripMenuItem1.Text = "Ajouter";
+            this.ajouterToolStripMenuItem1.Click += new System.EventHandler(this.ajouterToolStripMenuItem1_Click);
             // 
             // boxToolStripMenuItem
             // 
@@ -109,19 +109,19 @@
             this.boxToolStripMenuItem.Size = new System.Drawing.Size(65, 36);
             this.boxToolStripMenuItem.Text = "Box";
             // 
-            // ajouterToolStripMenuItem2
-            // 
-            this.ajouterToolStripMenuItem2.Name = "ajouterToolStripMenuItem2";
-            this.ajouterToolStripMenuItem2.Size = new System.Drawing.Size(180, 36);
-            this.ajouterToolStripMenuItem2.Text = "Ajouter";
-            this.ajouterToolStripMenuItem2.Click += new System.EventHandler(this.ajouterToolStripMenuItem2_Click);
-            // 
             // afficherToolStripMenuItem2
             // 
             this.afficherToolStripMenuItem2.Name = "afficherToolStripMenuItem2";
-            this.afficherToolStripMenuItem2.Size = new System.Drawing.Size(180, 36);
+            this.afficherToolStripMenuItem2.Size = new System.Drawing.Size(171, 36);
             this.afficherToolStripMenuItem2.Text = "Afficher";
             this.afficherToolStripMenuItem2.Click += new System.EventHandler(this.afficherToolStripMenuItem2_Click);
+            // 
+            // ajouterToolStripMenuItem2
+            // 
+            this.ajouterToolStripMenuItem2.Name = "ajouterToolStripMenuItem2";
+            this.ajouterToolStripMenuItem2.Size = new System.Drawing.Size(171, 36);
+            this.ajouterToolStripMenuItem2.Text = "Ajouter";
+            this.ajouterToolStripMenuItem2.Click += new System.EventHandler(this.ajouterToolStripMenuItem2_Click);
             // 
             // frmHome
             // 
@@ -136,6 +136,7 @@
             this.Name = "frmHome";
             this.Text = "Funky Box";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmHome_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
