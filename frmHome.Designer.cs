@@ -50,7 +50,7 @@
             this.boxToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 37);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -59,21 +59,22 @@
             this.clientToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.afficherToolStripMenuItem,
             this.ajouterToolStripMenuItem});
+            this.clientToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientToolStripMenuItem.Name = "clientToolStripMenuItem";
-            this.clientToolStripMenuItem.Size = new System.Drawing.Size(88, 36);
+            this.clientToolStripMenuItem.Size = new System.Drawing.Size(102, 33);
             this.clientToolStripMenuItem.Text = "Client";
             // 
             // afficherToolStripMenuItem
             // 
             this.afficherToolStripMenuItem.Name = "afficherToolStripMenuItem";
-            this.afficherToolStripMenuItem.Size = new System.Drawing.Size(171, 36);
+            this.afficherToolStripMenuItem.Size = new System.Drawing.Size(192, 34);
             this.afficherToolStripMenuItem.Text = "Afficher";
             this.afficherToolStripMenuItem.Click += new System.EventHandler(this.afficherToolStripMenuItem_Click);
             // 
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(171, 36);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(192, 34);
             this.ajouterToolStripMenuItem.Text = "Ajouter";
             this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterToolStripMenuItem_Click);
             // 
@@ -82,21 +83,22 @@
             this.parkingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.afficherToolStripMenuItem1,
             this.ajouterToolStripMenuItem1});
+            this.parkingToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.parkingToolStripMenuItem.Name = "parkingToolStripMenuItem";
-            this.parkingToolStripMenuItem.Size = new System.Drawing.Size(104, 36);
+            this.parkingToolStripMenuItem.Size = new System.Drawing.Size(129, 33);
             this.parkingToolStripMenuItem.Text = "Parking";
             // 
             // afficherToolStripMenuItem1
             // 
             this.afficherToolStripMenuItem1.Name = "afficherToolStripMenuItem1";
-            this.afficherToolStripMenuItem1.Size = new System.Drawing.Size(171, 36);
+            this.afficherToolStripMenuItem1.Size = new System.Drawing.Size(192, 34);
             this.afficherToolStripMenuItem1.Text = "Afficher";
             this.afficherToolStripMenuItem1.Click += new System.EventHandler(this.afficherToolStripMenuItem1_Click);
             // 
             // ajouterToolStripMenuItem1
             // 
             this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
-            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(171, 36);
+            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(192, 34);
             this.ajouterToolStripMenuItem1.Text = "Ajouter";
             this.ajouterToolStripMenuItem1.Click += new System.EventHandler(this.ajouterToolStripMenuItem1_Click);
             // 
@@ -105,21 +107,22 @@
             this.boxToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.afficherToolStripMenuItem2,
             this.ajouterToolStripMenuItem2});
+            this.boxToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxToolStripMenuItem.Name = "boxToolStripMenuItem";
-            this.boxToolStripMenuItem.Size = new System.Drawing.Size(65, 36);
+            this.boxToolStripMenuItem.Size = new System.Drawing.Size(75, 33);
             this.boxToolStripMenuItem.Text = "Box";
             // 
             // afficherToolStripMenuItem2
             // 
             this.afficherToolStripMenuItem2.Name = "afficherToolStripMenuItem2";
-            this.afficherToolStripMenuItem2.Size = new System.Drawing.Size(171, 36);
+            this.afficherToolStripMenuItem2.Size = new System.Drawing.Size(192, 34);
             this.afficherToolStripMenuItem2.Text = "Afficher";
             this.afficherToolStripMenuItem2.Click += new System.EventHandler(this.afficherToolStripMenuItem2_Click);
             // 
             // ajouterToolStripMenuItem2
             // 
             this.ajouterToolStripMenuItem2.Name = "ajouterToolStripMenuItem2";
-            this.ajouterToolStripMenuItem2.Size = new System.Drawing.Size(171, 36);
+            this.ajouterToolStripMenuItem2.Size = new System.Drawing.Size(192, 34);
             this.ajouterToolStripMenuItem2.Text = "Ajouter";
             this.ajouterToolStripMenuItem2.Click += new System.EventHandler(this.ajouterToolStripMenuItem2_Click);
             // 
@@ -128,7 +131,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.BackgroundImage = global::FunkyBox.Properties.Resources._14862026_creation_de_logo_fb_initiale_fb_lettre_logo_design_monogramme_vector_design_pro_vecteur_vectoriel;
+            this.BackgroundImage = global::FunkyBox.Properties.Resources.jkhkj;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;

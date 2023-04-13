@@ -111,6 +111,7 @@ namespace FunkyBox
             this.checkBox.TabIndex = 6;
             this.checkBox.Text = "Afficher les caratères";
             this.checkBox.UseVisualStyleBackColor = true;
+            this.checkBox.CheckedChanged += new System.EventHandler(this.checkBox_CheckedChanged);
             // 
             // label3
             // 

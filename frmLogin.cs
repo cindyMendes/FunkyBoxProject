@@ -17,7 +17,6 @@ namespace FunkyBox
     {
         Label lbl5 = new Label();
         Label lbl6 = new Label();
-        OleDbConnection connexion = new OleDbConnection();
         public frmLogin()
         {
             InitializeComponent();
