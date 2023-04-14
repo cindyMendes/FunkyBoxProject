@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCreateParking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateParking.Designer.cs">
+      <DependentUpon>frmCreateParking.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDisplayCustomers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,7 +76,7 @@
     <Compile Include="frmHome.Designer.cs">
       <DependentUpon>frmHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="Parking.cs" />
+    <Compile Include="PureParking.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="frmCreateCustomer.cs">
       <SubType>Form</SubType>
@@ -83,12 +89,6 @@
     </Compile>
     <Compile Include="frmCreateGarage.Designer.cs">
       <DependentUpon>frmCreateGarage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCreateParking.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCreateParking.Designer.cs">
-      <DependentUpon>frmCreateParking.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -104,9 +104,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCreateGarage.resx">
       <DependentUpon>frmCreateGarage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCreateParking.resx">
-      <DependentUpon>frmCreateParking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDisplayCustomers.resx">
       <DependentUpon>frmDisplayCustomers.cs</DependentUpon>

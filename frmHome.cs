@@ -49,6 +49,8 @@ namespace FunkyBox
 
         private void afficherToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            frmDisplayParking displayParkingForm = new frmDisplayParking();
+            initForm(displayParkingForm);
         } // end afficherToolStripMenuItem1_Click
 
         private void ajouterToolStripMenuItem2_Click(object sender, EventArgs e)
