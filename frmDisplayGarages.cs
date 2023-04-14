@@ -29,7 +29,8 @@ namespace FunkyBox
                 displayGarages.Columns.Add(new DataColumn("Nom du locataire", typeof(System.String)));
                 displayGarages.Columns.Add(new DataColumn("Début de location", typeof(System.DateTime)));
             }
-            
+
+            displayGarages.Clear();
             foreach (Garage newGarage in sdGarages)
             {
                 DataRow dr = displayGarages.NewRow();
@@ -41,6 +42,7 @@ namespace FunkyBox
                 dr[5] = newGarage.StartRent;
                 displayGarages.Rows.Add(dr);
             }
+            
             dgvDisplayGarages.DataSource = displayGarages;
             
         }

@@ -29,6 +29,7 @@ namespace FunkyBox
 
             }
 
+            displayParkings.Clear();
             foreach (PureParking newParking in parkingList)
             {
                 DataRow dr = displayParkings.NewRow();

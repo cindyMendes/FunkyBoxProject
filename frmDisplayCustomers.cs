@@ -33,6 +33,7 @@ namespace FunkyBox
                 displayCustomers.Columns.Add(new DataColumn("Plaque d'immatriculation", typeof(System.String)));
             }
 
+            displayCustomers.Clear();
             foreach (Customer newCustomer in sdCustomers)
             {
                 DataRow dr = displayCustomers.NewRow();
